@@ -1,0 +1,44 @@
+classes:
+	1)liga
+	2)clube
+	3)jogador
+	4)palmarés
+	5)Nacionalidade(?)
+											propriedades:
+												1)	nome_da_liga ----------------- 
+													ano_de_fundacao -----------------
+													temporada_atual -----------------
+													atual_campeão
+													campeão_recordista
+													recorde_títulos -----------------
+													recorde_melhor_ataque
+													recorde_melhor_defesa
+													número_de_jogadores -----------------
+													número_de_jogadores_estrangeiros -----------------
+													número_de_equipas -----------------
+													jogador_mais_valioso
+													valor_de_mercado -----------------
+
+												2)	Nome ----------------- 
+													ano_de_fundacao -----------------
+													posicao ----------------- 
+													anos_na_liga -----------------
+													estádio -----------------
+													balanço_transferências -----------------
+													valor_de_mercado -----------------
+
+												3) 	nome ----------------- 
+													posicao ----------------- 
+													idade ----------------- 
+													número ----------------- 
+													nacionalidade
+													altura -----------------
+											        pé -----------------
+											        clube_anterior -----------------
+											        valor_de_mercado -----------------
+											        golos_na_epoca -----------------
+											        assistencias_na_epoca -----------------
+
+											    4) 	designação ----------------- 
+											    	número ----------------- 
+

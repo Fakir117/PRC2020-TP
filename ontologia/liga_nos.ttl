@@ -1,0 +1,177 @@
+@prefix : <http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos> .
+
+<http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos> rdf:type owl:Ontology ;
+                                                                    rdfs:comment "Ontologia sobre Liga Nos da temporada 2019/20" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#eClubeDe
+:eClubeDe rdf:type owl:ObjectProperty ;
+          owl:inverseOf :temClube .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#eJogadorDe
+:eJogadorDe rdf:type owl:ObjectProperty ;
+            owl:inverseOf :temJogador .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#ePalmaresDe
+:ePalmaresDe rdf:type owl:ObjectProperty ;
+             owl:inverseOf :temPalmares .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#temClube
+:temClube rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :Liga ;
+          rdfs:range :Clube .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#temJogador
+:temJogador rdf:type owl:ObjectProperty ;
+            rdfs:domain :Clube ;
+            rdfs:range :Jogador .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#temNacionalidade
+:temNacionalidade rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Jogador ;
+                  rdfs:range :Nacionalidade .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#temPalmares
+:temPalmares rdf:type owl:ObjectProperty ;
+             rdfs:domain :Clube ;
+             rdfs:range :Palmares .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#altura
+:altura rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Jogador .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#ano_de_fundacao
+:ano_de_fundacao rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#anos_na_liga
+:anos_na_liga rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Clube .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#assistencias
+:assistencias rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Jogador .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#balanço_transferencias
+:balanço_transferencias rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :Clube .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#clube_anterior
+:clube_anterior rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Jogador .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#designacao
+:designacao rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#estadio
+:estadio rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Clube .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#golos_marcados
+:golos_marcados rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Jogador .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#idade
+:idade rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#nome
+:nome rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#numero
+:numero rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#pe
+:pe rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Jogador .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#posicao
+:posicao rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#recorde_titulos
+:recorde_titulos rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Liga .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#temporada_atual
+:temporada_atual rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Liga .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#total_equipas
+:total_equipas rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Liga .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#total_jogadores
+:total_jogadores rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Liga .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#total_jogadores_estrangeiros
+:total_jogadores_estrangeiros rdf:type owl:DatatypeProperty ;
+                              rdfs:domain :Liga .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#valor_mercado
+:valor_mercado rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#Clube
+:Clube rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#Jogador
+:Jogador rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#Liga
+:Liga rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#Nacionalidade
+:Nacionalidade rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#Palmares
+:Palmares rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
