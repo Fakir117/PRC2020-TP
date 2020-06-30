@@ -1,0 +1,92 @@
+1) Informações da Liga
+
+select * where{
+	?liga a :Liga.
+    ?liga :ano_de_fundacao ?fundacao.   
+    ?liga :temporada_atual ?temporada.
+    ?liga :atual_campeao ?camp.
+    optional{?liga :campeao_recordista ?record.}
+    optional{?liga :recorde_melhor_ataque ?ataque.}
+    optional{?liga :recorde_melhor_defesa ?def.}
+    optional{?liga :recorde_titulos ?tit.}
+    optional{ ?liga :total_equipas ?equipas.}
+    optional{ ?liga :total_jogadores ?jog.}
+    optional{ ?liga :total_jogadores_estrangeiros ?jogEstrg.}
+    optional{ ?liga :jogador_mais_valioso ?jogVal.}
+    optional{?liga :valor_mercado ?valor.}       
+}
+
+----------------------------------------------------
+2) Clubes de uma liga
+
+select * where{
+    ?clube :nome ?nome.
+    ?clube :classificacao ?pos.
+    ?clube :valor_mercado ?valor.
+    ?clube :ano_de_fundacao ?fundacao.           
+}
+
+----------------------------------------------------
+3) Informações de cada Clube
+
+select * where{
+	?clube rdf:type :Clube.
+    ?clube :nome ?nome.
+    ?clube :ano_de_fundacao ?fundacao.
+    ?clube :anos_na_liga ?anos.
+    ?clube :classificacao ?class.
+    ?clube :balanco_transferencias ?balanco.
+    ?clube :estadio ?estadio.
+    ?clube :valor_mercado ?valor.    
+}
+----------------------------------------------------
+4) Jogadores de um determinado Clube
+
+select ?jogador ?nome ?pos ?camisola ?idade where{
+	:Sport_Lisboa_e_Benfica :temJogador ?jogador.
+    ?jogador :nome ?nome.
+    ?jogador :posicao ?pos.
+    ?jogador :camisola ?camisola.
+    ?jogador :idade ?idade.
+}
+
+----------------------------------------------------
+5) Informações de cada Jogador
+
+select * where{
+	:Adel_Tarabt a :Jogador;
+              :nome ?nome;
+              :idade ?idade;
+              :posicao ?pos;
+              :camisola ?camisola;
+              :altura ?altura;
+              :pe ?pe;
+              :golos_marcados ?golos;
+              :assistencias ?assist;
+              :clube_anterior ?clubAnt;
+              :validade_contrato ?contrato;
+              :valor_mercado ?valor;
+              :temNacionalidade ?nacional
+}
+
+-- versao compacta
+/*
+select ?nome ?idade ?pos ?camisola ?altura ?pe ?golos ?assist ?clubAnt ?contrato ?valor
+(GROUP_CONCAT(?nacional;separator=" | ") as ?nacionalidade) where{
+	:Adel_Tarabt a :Jogador;
+              :nome ?nome;
+              :idade ?idade;
+              :posicao ?pos;
+              :camisola ?camisola;
+              :altura ?altura;
+              :pe ?pe;
+              :golos_marcados ?golos;
+              :assistencias ?assist;
+              :clube_anterior ?clubAnt;
+              :validade_contrato ?contrato;
+              :valor_mercado ?valor;
+              :temNacionalidade ?nacional
+}
+
+group by ?nome ?idade ?pos ?camisola ?altura ?pe ?golos ?assist ?clubAnt ?contrato ?valor
+*/
