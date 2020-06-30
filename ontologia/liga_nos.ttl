@@ -13,6 +13,18 @@
 #    Object Properties
 #################################################################
 
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#atual_Campeao
+:atual_Campeao rdf:type owl:ObjectProperty ;
+               rdfs:domain :Liga ;
+               rdfs:range :Clube .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#campeao_recordista
+:campeao_recordista rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Liga ;
+                    rdfs:range :Clube .
+
+
 ###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#eClubeDe
 :eClubeDe rdf:type owl:ObjectProperty ;
           owl:inverseOf :temClube .
@@ -31,6 +43,12 @@
 ###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#ePalmaresDe
 :ePalmaresDe rdf:type owl:ObjectProperty ;
              owl:inverseOf :temPalmares .
+
+
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#jogador_mais_valioso
+:jogador_mais_valioso rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Liga ;
+                      rdfs:range :Jogador .
 
 
 ###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#temClube
@@ -81,11 +99,6 @@
               rdfs:domain :Jogador .
 
 
-###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#atual_campeao
-:atual_campeao rdf:type owl:DatatypeProperty ;
-               rdfs:domain :Liga .
-
-
 ###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#balanco_transferencias
 :balanco_transferencias rdf:type owl:DatatypeProperty ;
                         rdfs:domain :Clube .
@@ -94,11 +107,6 @@
 ###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#camisola
 :camisola rdf:type owl:DatatypeProperty ;
           rdfs:domain :Jogador .
-
-
-###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#campeao_recordista
-:campeao_recordista rdf:type owl:DatatypeProperty ;
-                    rdfs:domain :Liga .
 
 
 ###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#classificacao
@@ -128,11 +136,6 @@
 
 ###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#idade
 :idade rdf:type owl:DatatypeProperty .
-
-
-###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#jogador_mais_valioso
-:jogador_mais_valioso rdf:type owl:DatatypeProperty ;
-                      rdfs:domain :Liga .
 
 
 ###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#nome
@@ -3239,6 +3242,8 @@
 ###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#Futebol_Clube_do_Porto
 :Futebol_Clube_do_Porto rdf:type owl:NamedIndividual ,
                                  :Clube ;
+                        :atual_Campeao :Sport_Lisboa_e_Benfica ;
+                        :jogador_mais_valioso :Alex_telles ;
                         :temJogador :Alex_telles ,
                                     :Augustin_Marchesin ,
                                     :Chancel_Mbemba ,
@@ -4661,6 +4666,9 @@
 ###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#LIGA_NOS
 :LIGA_NOS rdf:type owl:NamedIndividual ,
                    :Liga ;
+          :atual_Campeao :Sport_Lisboa_e_Benfica ;
+          :campeao_recordista :Sport_Lisboa_e_Benfica ;
+          :jogador_mais_valioso :Alex_telles ;
           :temClube :Belenenses_SAD ,
                     :Boavista_Futebol_Clube ,
                     :Club_Sport_Maritimo ,
@@ -4680,9 +4688,6 @@
                     :Vitoria_Futebol_Clube ,
                     :Vitoria_Sport_Clube ;
           :ano_de_fundacao "1930" ;
-          :atual_campeao "Sport Lisboa e Benfica" ;
-          :campeao_recordista "Sport Lisboa e Benfica (37 títulos)" ;
-          :jogador_mais_valioso "Alex Telles (32M €)" ;
           :recorde_titulos "37" ;
           :temporada_atual "2019/20" ;
           :total_equipas "18" ;
