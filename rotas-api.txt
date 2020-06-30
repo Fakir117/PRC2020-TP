@@ -1,0 +1,35 @@
+Liga 
+    /about
+        -nome_da_liga
+        -data_de_criação
+        -temporada_atual
+        -atual_campeão
+        -campeão_recordista
+        -recorde_títulos
+        -recorde_melhor_ataque
+        -recorde_melhor_defesa
+        -número_de_jogadores
+        -número_de_jogadores_estrangeiros
+        -número_de_equipas
+        -jogador_mais_valioso
+        -valor_de_mercado
+
+Clube
+    /clubes
+        -nome
+        -classificacao
+    /clube/:id
+        -nome
+        -ano_de_fundacao
+        -anos_na_liga 
+        -classificacao 
+        -balanco_transferencias
+        -estadio 
+        -valor_mercado
+
+Jogador
+    /jogadores
+    /jogador/:id
+
+Nacionalidade
+    /nacionalidade
