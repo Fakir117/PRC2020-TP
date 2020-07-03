@@ -1,5 +1,5 @@
 <template>
-    <ConsultaJogador :idJog="$route.params.id" />
+    <ConsultaJogador :idJogador="$route.params.id" />
 </template>
 
 <script>

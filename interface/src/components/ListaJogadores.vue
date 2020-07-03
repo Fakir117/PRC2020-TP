@@ -1,151 +1,91 @@
 <template>
-  <v-container>
-    <v-row class="text-center">
-      <v-col cols="12">
-        <v-img
-          :src="require('../assets/logo.svg')"
-          class="my-3"
-          contain
-          height="200"
-        />
-      </v-col>
-
-      <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Vuetify
-        </h1>
-
-        <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br>please join our online
-          <a
-            href="https://community.vuetifyjs.com"
-            target="_blank"
-          >Discord Community</a>
-        </p>
-      </v-col>
-
-      <v-col
-        class="mb-5"
-        cols="12"
+  <v-card class="ma-2">
+    <v-card-title class="indigo darken-4 white--text" dark>
+      Liga Nos "Temporada 2019/20": Jogadores da liga
+      <v-spacer></v-spacer>
+      <v-text-field
+        v-model="filtrar"
+        label="Filtrar"
+        single-line
+        hide-details
+        dark
+      ></v-text-field>
+    </v-card-title>
+    <v-card-text>
+      <v-data-table
+        :headers="hjogadores"
+        :items="jogadores"
+        :footer-props="footer_props"
+        :search="filtrar"
       >
-        <h2 class="headline font-weight-bold mb-3">
-          What's next?
-        </h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(next, i) in whatsNext"
-            :key="i"
-            :href="next.href"
-            class="subheading mx-3"
-            target="_blank"
+        <template v-slot:no-data>
+          <v-alert :value="true" color="warning" icon="warning">
+            Ainda não foi possível apresentar uma lista dos jogadores...
+          </v-alert>
+        </template>
+        <template v-slot:item.ops="{ item }">
+          <v-icon
+            @click="mostraJogador(item)"
           >
-            {{ next.text }}
-          </a>
-        </v-row>
-      </v-col>
+            {{ verJogador }}
+          </v-icon>
+        </template>
+      </v-data-table>
+    </v-card-text>
 
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
-        <h2 class="headline font-weight-bold mb-3">
-          Important Links
-        </h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(link, i) in importantLinks"
-            :key="i"
-            :href="link.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ link.text }}
-          </a>
-        </v-row>
-      </v-col>
-
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
-        <h2 class="headline font-weight-bold mb-3">
-          Ecosystem
-        </h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(eco, i) in ecosystem"
-            :key="i"
-            :href="eco.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ eco.text }}
-          </a>
-        </v-row>
-      </v-col>
-    </v-row>
-  </v-container>
+    <v-card-actions>
+      <v-spacer></v-spacer>
+      <v-btn color="blue darken-1" href="/clubes">Clubes</v-btn>
+    </v-card-actions>
+  </v-card>
 </template>
 
 <script>
-  export default {
-    name: 'HelloWorld',
+import axios from 'axios'
+const lhost = require("@/config/global").host;
+//const lhost = 'http://localhost:6001/jogadores/'
 
-    data: () => ({
-      ecosystem: [
-        {
-          text: 'vuetify-loader',
-          href: 'https://github.com/vuetifyjs/vuetify-loader',
-        },
-        {
-          text: 'github',
-          href: 'https://github.com/vuetifyjs/vuetify',
-        },
-        {
-          text: 'awesome-vuetify',
-          href: 'https://github.com/vuetifyjs/awesome-vuetify',
-        },
-      ],
-      importantLinks: [
-        {
-          text: 'Documentation',
-          href: 'https://vuetifyjs.com',
-        },
-        {
-          text: 'Chat',
-          href: 'https://community.vuetifyjs.com',
-        },
-        {
-          text: 'Made with Vuetify',
-          href: 'https://madewithvuejs.com/vuetify',
-        },
-        {
-          text: 'Twitter',
-          href: 'https://twitter.com/vuetifyjs',
-        },
-        {
-          text: 'Articles',
-          href: 'https://medium.com/vuetify',
-        },
-      ],
-      whatsNext: [
-        {
-          text: 'Explore components',
-          href: 'https://vuetifyjs.com/components/api-explorer',
-        },
-        {
-          text: 'Select a layout',
-          href: 'https://vuetifyjs.com/getting-started/pre-made-layouts',
-        },
-        {
-          text: 'Frequently Asked Questions',
-          href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions',
-        },
-      ],
-    }),
+
+import { mdiAccount } from '@mdi/js';
+
+export default {
+  name: 'ListaJogadores',
+
+  data: () => ({
+    hjogadores: [
+      {text: "Nome", sortable: true, value: 'nome', class: 'subtitle-1'},
+      {text: "Posição", sortable: true, value: 'pos', class: 'subtitle-1'},
+      {text: "Camisola", sortable: true, value: 'camisola', class: 'subtitle-1'},
+      {text: "Idade", sortable: true, value: 'idade', class: 'subtitle-1'},
+      {text: "Operações", value: 'ops', class: 'subtitle-1'}
+    ],
+    footer_props: {
+      "items-per-page-text": "Mostrar",
+      "items-per-page-options": [10, 20, 50, -1],
+      "items-per-page-all-text": "Todos"
+    }, 
+
+    jogadores: [],
+    filtrar: "",
+    verJogador: mdiAccount
+  }),
+
+  created: async function(){
+    try {
+      let response = await axios.get(lhost + "/jogadores");
+      this.jogadores = response.data
+    } 
+    catch (e) {
+      return e;
+    }
+  },
+
+  methods: {
+    mostraJogador: function(item){
+      alert('Cliquei no jogador: ' + JSON.stringify(item));
+      this.$router.push("/jogadores/" + item.idJogador);
+    }
   }
+}
+
 </script>

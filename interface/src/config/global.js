@@ -1,1 +1,1 @@
-module.exports.host = "http://localhost:8001"
+module.exports.host = "http://localhost:6001"

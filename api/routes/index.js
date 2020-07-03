@@ -5,7 +5,7 @@ var Liga = require('../controllers/liga')
 router.get('/about', function(req, res, next) {
   Liga.getInformacao()
     .then(dados => res.jsonp(dados))
-    .catch(e => res.status(500).send(`Erro na listagem de Clubes: ${e}`))
+    .catch(e => res.status(500).send(`Erro na informação sobre a Liga: ${e}`))
 });
 
 router.get('/clubes', function(req, res, next) {
@@ -21,12 +21,12 @@ router.get('/clubes/:id/jogadores', function(req, res) {
 });
 
 router.get('/clubes/:id', function(req, res) {
-  Liga.getClubes(req.params.id)
+  Liga.getClube(req.params.id)
     .then(dados => res.jsonp(dados))
     .catch(e => res.status(500).send(`Erro na listagem do clube ${req.params.id}: ${e}`))
 });
 
-/* -----------------------------------------------------ATORES-------------------------------------------------------- */
+/* -----------------------------------------------------JOGADORES-------------------------------------------------------- */
 router.get('/jogadores', function(req, res, next) {
   Liga.getListaJogadores()
     .then(dados => res.jsonp(dados))

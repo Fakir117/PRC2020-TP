@@ -1,7 +1,7 @@
 <template>
     <v-card class="ma-2">
         <v-card-title class="indigo darken-4 white--text" dark>
-            Liga Nos: Temporada "2019/20": Lista dos Clubes na liga
+            Liga Nos "Temporada 2019/20": Clubes da liga
             <v-spacer></v-spacer>
             <v-text-field
               v-model="filtrar"
@@ -11,26 +11,49 @@
               dark
             ></v-text-field>
         </v-card-title>
+        <v-card-text>
+            <v-data-table
+             :headers="hclubes"
+             :items="clubes"
+             :footer-props="footer_props"
+             :search="filtrar"
+            >
+                <template v-slot:no-data>
+                    <v-alert :value="true" color="warning" icon="warning">
+                        Ainda não foi possível apresentar uma lista dos clubes...
+                    </v-alert>
+                </template>
+                <template v-slot:item.ops="{ item }">
+                    <v-icon
+                     @click="mostraClube(item)"
+                    >
+                        {{ verClube }}
+                    </v-icon>
+                </template>
+            </v-data-table>
+        </v-card-text>
+        <v-card-actions>
+         <v-spacer></v-spacer>
+         <v-btn color="blue darken-1" href="/jogadores">Jogadores</v-btn>
+        </v-card-actions>
     </v-card>
-
 </template>
 
 <script>
 import axios from 'axios'
 const lhost = require("@/config/global").host;
 
-import { mdiClubOpen } from '@mdi/js';
+import { mdiAccount } from '@mdi/js';
 
 export default {
   name: 'ListaClubes',
 
   data: () => ({
-    hfilmes: [
-      {text: "Título", sortable: true, value: 'titulo', class: 'subtitle-1'},
-      {text: "Data", sortable: true, value: 'data', class: 'subtitle-1'},
-      {text: "Língua", sortable: true, value: 'lingua', class: 'subtitle-1'},
-      {text: "Duração", sortable: true, value: 'duracao', class: 'subtitle-1'},
-      {text: "Popularidade", sortable: true, value: 'pop', class: 'subtitle-1', filterable: false},
+    hclubes: [
+      {text: "Classificação", sortable: true, value: 'pos', class: 'subtitle-1'},
+      {text: "Nome", sortable: true, value: 'nome', class: 'subtitle-1'},
+      {text: "Ano de fundação", sortable: true, value: 'fundacao', class: 'subtitle-1', filterable: false},
+      {text: "Valor de mercado", sortable: true, value: 'valor', class: 'subtitle-1', filterable: false},
       {text: "Operações", value: 'ops', class: 'subtitle-1'}
     ],
     footer_props: {
@@ -39,15 +62,15 @@ export default {
       "items-per-page-all-text": "Todos"
     }, 
 
-    filmes: [],
+    clubes: [],
     filtrar: "",
-    verFilme: mdiClubOpen
+    verClube: mdiAccount
   }),
 
   created: async function(){
     try {
       let response = await axios.get(lhost + "/clubes");
-      this.filmes = response.data
+      this.clubes = response.data
     } 
     catch (e) {
       return e;
@@ -55,9 +78,9 @@ export default {
   },
 
   methods: {
-    mostraFilme: function(item){
-      alert('Cliquei no filme: ' + JSON.stringify(item));
-      this.$router.push("/filmes/" + item.idFilme);
+    mostraClube: function(item){
+      alert('Cliquei no clube: ' + JSON.stringify(item));
+      this.$router.push("/clubes/" + item.idClube);
     }
   }
   

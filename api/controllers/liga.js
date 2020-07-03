@@ -22,21 +22,24 @@ var prefixes = `
 
 var getLink = "http://localhost:7200/repositories/ligaNos" + "?query=" 
 
-Liga.getInformacao = async function(idLiga){
+Liga.getInformacao = async function(){
     var query = `select * where{
-        c:${idLiga} a c:Liga.
-        c:${idLiga} c:ano_de_fundacao ?fundacao.   
-        c:${idLiga} c:temporada_atual ?temporada.
-        c:${idLiga} c:atual_campeao ?camp.
-        optional{ c:${idLiga} c:campeao_recordista ?record.}
-        optional{ c:${idLiga} c:recorde_melhor_ataque ?ataque.}
-        optional{ c:${idLiga} c:recorde_melhor_defesa ?def.}
-        optional{ c:${idLiga} c:recorde_titulos ?tit.}
-        optional{ c:${idLiga} c:total_equipas ?equipas.}
-        optional{ c:${idLiga} c:total_jogadores ?jog.}
-        optional{ c:${idLiga} c:total_jogadores_estrangeiros ?jogEstrg.}
-        optional{ c:${idLiga} c:jogador_mais_valioso ?jogVal.}
-        optional{ c:${idLiga} c:valor_mercado ?valor.}       
+        ?liga a c:Liga.
+        ?liga c:ano_de_fundacao ?fundacao.   
+        ?liga c:temporada_atual ?temporada.
+        ?liga c:atual_Campeao ?camp.
+    	?camp c:nome ?clube.
+        optional{ ?liga c:campeao_recordista ?record.
+    			  ?record c:nome ?recordClub.}
+        optional{ ?liga c:recorde_melhor_ataque ?ataque.}
+        optional{ ?liga c:recorde_melhor_defesa ?def.}
+        optional{ ?liga c:recorde_titulos ?tit.}
+        optional{ ?liga c:total_equipas ?equipas.}
+        optional{ ?liga c:total_jogadores ?jog.}
+        optional{ ?liga c:total_jogadores_estrangeiros ?jogEstrg.}
+        optional{ ?liga c:jogador_mais_valioso ?jogVal.
+    			  ?jogVal c:nome ?jogador.}
+        optional{ ?liga c:valor_mercado ?valor.}  
     } ` 
     var encoded = encodeURIComponent(prefixes + query)
 
@@ -68,28 +71,6 @@ Liga.getListaClubes = async function(){
     } 
 }
 
-Liga.getClube = async function(idClube){
-    var query = `select * where{
-            c:${idClube} rdf:type c:Clube.
-            c:${idClube} c:nome ?nome.
-            c:${idClube} c:ano_de_fundacao ?fundacao.
-            c:${idClube} c:anos_na_liga ?anos.
-            c:${idClube} c:classificacao ?class.
-            c:${idClube} c:balanco_transferencias ?balanco.
-            c:${idClube} c:estadio ?estadio.
-            c:${idClube} c:valor_mercado ?valor.    
-        }` 
-    var encoded = encodeURIComponent(prefixes + query)
-
-    try{
-        var response = await axios.get(getLink + encoded)
-        return myNormalize(response.data)
-    }
-    catch(e){
-        throw(e)
-    } 
-}
-
 Liga.getJogadoresDoClube = async function(idClube){
     var query = `select ?jogador ?nome ?pos ?camisola ?idade where{
         c:${idClube} c:temJogador ?jogador.
@@ -99,6 +80,22 @@ Liga.getJogadoresDoClube = async function(idClube){
         ?jogador c:idade ?idade.
     } ` 
     //bind(strafter(str(?g), 'LigaNos#') as ?jogador) .
+    var encoded = encodeURIComponent(prefixes + query)
+
+    try{
+        var response = await axios.get(getLink + encoded)
+        return myNormalize(response.data)
+    }
+    catch(e){
+        throw(e)
+    }
+}
+
+Liga.getPalmaresDoClube = async function(idClube){
+    var query = `select ?pal ?taca where{
+        c:${idClube} c:temPalmares ?pal.
+        ?pal c:nome ?taca.
+    } ` 
     var encoded = encodeURIComponent(prefixes + query)
 
     try{
@@ -128,7 +125,7 @@ Liga.getListaJogadores = async function(){
     }
 }
 
-Liga.getJogador = async function(idJogador){
+async function getJogadorAtomica(idJogador){
     var query = `select * where{
         c:${idJogador} a c:Jogador;
                   c:nome ?nome;
@@ -141,9 +138,24 @@ Liga.getJogador = async function(idJogador){
                   c:assistencias ?assist;
                   c:clube_anterior ?clubAnt;
                   c:validade_contrato ?contrato;
-                  c:valor_mercado ?valor;
-                  c:temNacionalidade ?nacional
-    }` 
+                  c:valor_mercado ?valor
+    }`
+    var encoded = encodeURIComponent(prefixes + query)
+
+    try{
+        var response = await axios.get(getLink + encoded)
+        return myNormalize(response.data)
+    }
+    catch(e){
+        throw(e)
+    }
+}
+
+Liga.getNacionalidadeJogador = async function(idJogador){
+    var query = `select ?nacao ?nacionalidade where{
+        c:${idJogador} c:temNacionalidade ?nacao.
+        ?nacao c:nome ?nacionalidade.
+    } ` 
     var encoded = encodeURIComponent(prefixes + query)
 
     try{
@@ -176,16 +188,34 @@ async function getClubeAtomica(idClube){
     } 
 }
   
-Liga.getClubes = async function(idClube){
+Liga.getClube = async function(idClube){
     try{
         var atomica = await getClubeAtomica(idClube)
         var jogadores = await Liga.getJogadoresDoClube(idClube)
+        var palmares = await Liga.getPalmaresDoClube(idClube)
 
         var clube = {
             info : atomica[0],          //campo: variavel
             jogadores : jogadores,
+            palmares : palmares
         }
         return clube
+    }
+    catch(e){
+        throw(e)
+    }
+}
+
+Liga.getJogador = async function(idJogador){
+    try{
+        var atomica = await getJogadorAtomica(idJogador)
+        var nacionalidade = await Liga.getNacionalidadeJogador(idJogador)
+
+        var jogador = {
+            info : atomica[0],         
+            nacionalidade : nacionalidade
+        }
+        return jogador
     }
     catch(e){
         throw(e)
