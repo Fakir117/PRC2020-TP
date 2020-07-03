@@ -57,7 +57,8 @@ Liga.getListaClubes = async function(){
         ?clube c:nome ?nome.
         ?clube c:classificacao ?pos.
         ?clube c:valor_mercado ?valor.
-        ?clube c:ano_de_fundacao ?fundacao.           
+        ?clube c:ano_de_fundacao ?fundacao.
+        bind(strafter(str(?clube), 'LigaNos#') as ?idClube) .           
     }
     order by ?nome ` 
     var encoded = encodeURIComponent(prefixes + query)
@@ -72,14 +73,14 @@ Liga.getListaClubes = async function(){
 }
 
 Liga.getJogadoresDoClube = async function(idClube){
-    var query = `select ?jogador ?nome ?pos ?camisola ?idade where{
+    var query = `select ?jogador ?nome ?pos ?camisola ?idade ?idJogador where{
         c:${idClube} c:temJogador ?jogador.
         ?jogador c:nome ?nome.
         ?jogador c:posicao ?pos.
         ?jogador c:camisola ?camisola.
         ?jogador c:idade ?idade.
+        bind(strafter(str(?jogador), 'LigaNos#') as ?idJogador) .
     } ` 
-    //bind(strafter(str(?g), 'LigaNos#') as ?jogador) .
     var encoded = encodeURIComponent(prefixes + query)
 
     try{
@@ -92,9 +93,10 @@ Liga.getJogadoresDoClube = async function(idClube){
 }
 
 Liga.getPalmaresDoClube = async function(idClube){
-    var query = `select ?pal ?taca where{
-        c:${idClube} c:temPalmares ?pal.
-        ?pal c:nome ?taca.
+    var query = `select ?p ?taca ?pal where{
+        c:${idClube} c:temPalmares ?p.
+        ?p c:nome ?taca.
+        bind(strafter(str(?p), 'LigaNos#') as ?pal) .
     } ` 
     var encoded = encodeURIComponent(prefixes + query)
 
@@ -108,11 +110,12 @@ Liga.getPalmaresDoClube = async function(idClube){
 }
 
 Liga.getListaJogadores = async function(){
-    var query = `select ?jogador ?nome ?pos ?camisola ?idade where{
+    var query = `select ?jogador ?nome ?pos ?camisola ?idade ?idJogador where{
         ?jogador c:nome ?nome.
         ?jogador c:posicao ?pos.
         ?jogador c:camisola ?camisola.
         ?jogador c:idade ?idade.
+        bind(strafter(str(?jogador), 'LigaNos#') as ?idJogador) .
     }` 
     var encoded = encodeURIComponent(prefixes + query)
 

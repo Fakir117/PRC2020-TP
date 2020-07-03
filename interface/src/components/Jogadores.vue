@@ -8,7 +8,7 @@
                 <ul>
                     <li>
                         <span v-for="j in lista" :key="j.idJogador">
-                            <a href="#">{{ j.nome }}</a>;
+                            <a href="/jogadores">{{ j.nome }}</a>;
                         </span>
                     </li>
                 </ul>

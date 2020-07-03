@@ -87,14 +87,15 @@ export default {
 
   data: () => ({
     clube: {},
-    clubeCarregado: false,
+    clubeCarregado: false
+    
   }),
 
   created: async function(){
     try {
       let response = await axios.get(lhost + "/clubes/" + this.idClube);
       this.clube = response.data;
-      this.clube.jogadores.sort((a,b) => a.anome > b.anome? 1: -1);
+      //this.clube.jogadores.sort((a,b) => a.anome > b.anome? 1: -1);
       this.clubeCarregado = true;
     } 
     catch (e) {
