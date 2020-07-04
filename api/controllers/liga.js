@@ -68,6 +68,7 @@ Liga.getListaClubes = async function(){
         ?clube c:classificacao ?pos.
         ?clube c:valor_mercado ?valor.
         ?clube c:ano_de_fundacao ?fundacao.
+        ?clube c:simbolo ?simb.
         bind(strafter(str(?clube), 'LigaNos#') as ?idClube) .           
     }
     order by ?nome ` 
@@ -90,7 +91,8 @@ Liga.getJogadoresDoClube = async function(idClube){
         ?jogador c:camisola ?camisola.
         ?jogador c:idade ?idade.
         bind(strafter(str(?jogador), 'LigaNos#') as ?idJogador) .
-    } ` 
+    }
+    order by ?nome ` 
     var encoded = encodeURIComponent(prefixes + query)
 
     try{
@@ -138,6 +140,27 @@ Liga.getListaJogadores = async function(){
     }
 }
 
+Liga.getListaEstadios = async function(){
+    var query = `select distinct * where{
+        ?e c:nome ?estadio.
+        ?e c:coordenadas ?coord.
+        ?e c:eEstadioDe ?c.
+        ?e c:imagem ?imagem.
+        ?c c:nome ?clube.
+        bind(strafter(str(?e), 'LigaNos#') as ?idEstadio) .           
+    }
+    order by ?estadio ` 
+    var encoded = encodeURIComponent(prefixes + query)
+
+    try{
+        var response = await axios.get(getLink + encoded)
+        return myNormalize(response.data)
+    }
+    catch(e){
+        throw(e)
+    } 
+}
+
 async function getJogadorAtomica(idJogador){
     var query = `select * where{
         c:${idJogador} a c:Jogador;
@@ -151,7 +174,9 @@ async function getJogadorAtomica(idJogador){
                   c:assistencias ?assist;
                   c:clube_anterior ?clubAnt;
                   c:validade_contrato ?contrato;
-                  c:valor_mercado ?valor.
+                  c:valor_mercado ?valor;
+                  c:eJogadorDe ?clu.
+        ?clu c:nome ?clube.
     }`
     var encoded = encodeURIComponent(prefixes + query)
 
@@ -191,7 +216,7 @@ async function getClubeAtomica(idClube){
         c:${idClube} c:temEstadio ?est.
         ?est c:nome ?estadio.
         ?est c:imagem ?imgEstadio.
-        ?est c:coordenadas ?cordEstadio.
+        ?est c:coordenadas ?coordEstadio.
         c:${idClube} c:valor_mercado ?valor.
         c:${idClube} c:pagina_oficial ?pagina.
         optional{c:${idClube} c:simbolo ?simb.}

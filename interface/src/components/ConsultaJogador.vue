@@ -11,6 +11,14 @@
         <v-card-text>
                 <v-row>
                   <v-col cols="2">
+                    <div class="info-label">Clube Atual</div>
+                  </v-col>
+                  <v-col>
+                    <div class="info-content">{{ jogador.info.clube }}</div>
+                  </v-col>
+                </v-row>
+                <v-row>
+                  <v-col cols="2">
                     <div class="info-label">Idade</div>
                   </v-col>
                   <v-col>

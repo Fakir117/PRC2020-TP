@@ -90,7 +90,7 @@
           <div class="info-label">Página Oficial</div>
         </v-col>
         <v-col>
-          <div class="info-content">{{ liga.info.valor }}</div>
+          <div class="info-content"><a :href=liga.info.pagina >{{ liga.info.pagina }}</a></div>
         </v-col>
       </v-row>
     </v-card-text>

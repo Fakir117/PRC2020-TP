@@ -33,7 +33,12 @@ Vue.use(VueRouter)
     path: '/about',
     name: 'Informação Liga',
     component: () => import('../views/About.vue')
-  }
+  },
+  {
+    path: '/estadios',
+    name: 'Estadios',
+    component: () => import('../views/Estadios.vue')
+  },
 ]
 
 const router = new VueRouter({

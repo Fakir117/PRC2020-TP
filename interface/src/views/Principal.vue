@@ -1,5 +1,5 @@
 <template>
-    <ListaClubes />
+  <ListaClubes />
 </template>
 
 <script>

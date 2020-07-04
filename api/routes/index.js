@@ -39,4 +39,11 @@ router.get('/jogadores/:id', function(req, res) {
     .catch(e => res.status(500).send(`Erro na listagem do jogador ${req.params.id}: ${e}`))
 });
 
+/* -----------------------------------------------------JOGADORES-------------------------------------------------------- */
+router.get('/estadios', function(req, res, next) {
+  Liga.getListaEstadios()
+    .then(dados => res.jsonp(dados))
+    .catch(e => res.status(500).send(`Erro na listagem de estadios: ${e}`))
+});
+
 module.exports = router;

@@ -5,6 +5,12 @@
         </v-alert>
         <v-card v-else>
             <v-card-title class="indigo darken-4 white--text" dark>
+                <v-avatar>
+                  <img
+                    :src=clube.info.simb
+                    alt="simbolo"
+                  >
+                </v-avatar>
                 <span class="headline">"{{ clube.info.nome }}"</span>
             </v-card-title>
             <v-card-text>
@@ -42,6 +48,14 @@
                 </v-row>
                 <v-row>
                   <v-col cols="2">
+                    <div class="info-label">Coordenadas do Estádio</div>
+                  </v-col>
+                  <v-col>
+                    <div class="info-content">{{ clube.info.coordEstadio }}</div>
+                  </v-col>
+                </v-row>
+                <v-row>
+                  <v-col cols="2">
                     <div class="info-label">Valor de Mercado</div>
                   </v-col>
                   <v-col>
@@ -61,7 +75,7 @@
                     <div class="info-label">Página Oficial</div>
                   </v-col>
                   <v-col>
-                    <div class="info-content">{{ clube.info.pagina }}</div>
+                    <div class="info-content"><a :href=clube.info.pagina >{{clube.info.pagina }}</a></div>
                   </v-col>
                 </v-row>
 
