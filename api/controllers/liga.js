@@ -22,12 +22,13 @@ var prefixes = `
 
 var getLink = "http://localhost:7200/repositories/ligaNos" + "?query=" 
 
-Liga.getInformacao = async function(idLiga){
+Liga.getInformacao = async function(){
     var query = `select * where{
         ?liga a c:Liga;
-                    c:ano_de_fundacao ?fundacao;  
-                    c:temporada_atual ?temporada;
-                    c:atual_Campeao ?camp.
+            c:nome ?nomeLiga;
+            c:ano_de_fundacao ?fundacao;  
+            c:temporada_atual ?temporada;
+            c:atual_campeao ?camp.
     	?camp c:nome ?clube.
         optional{ ?liga c:campeao_recordista ?record.
     			  ?record c:nome ?recordClub.}
@@ -40,6 +41,7 @@ Liga.getInformacao = async function(idLiga){
         optional{ ?liga c:jogador_mais_valioso ?jogVal.
     			  ?jogVal c:nome ?jogador.}
         optional{ ?liga c:valor_mercado ?valor.} 
+        optional{ ?liga c:pagina_oficial ?pagina.} 
         bind(strafter(str(?liga), 'LigaNos#') as ?idLiga) . 
     } ` 
     var encoded = encodeURIComponent(prefixes + query)
@@ -149,7 +151,7 @@ async function getJogadorAtomica(idJogador){
                   c:assistencias ?assist;
                   c:clube_anterior ?clubAnt;
                   c:validade_contrato ?contrato;
-                  c:valor_mercado ?valor
+                  c:valor_mercado ?valor.
     }`
     var encoded = encodeURIComponent(prefixes + query)
 
@@ -163,7 +165,7 @@ async function getJogadorAtomica(idJogador){
 }
 
 Liga.getNacionalidadeJogador = async function(idJogador){
-    var query = `select ?nacao ?nacionalidade where{
+    var query = `select distinct ?nacao ?nacionalidade where{
         c:${idJogador} c:temNacionalidade ?nacao.
         ?nacao c:nome ?nacionalidade.
     } ` 
@@ -186,8 +188,13 @@ async function getClubeAtomica(idClube){
         c:${idClube} c:anos_na_liga ?anos.
         c:${idClube} c:classificacao ?class.
         c:${idClube} c:balanco_transferencias ?balanco.
-        c:${idClube} c:estadio ?estadio.
-        c:${idClube} c:valor_mercado ?valor.    
+        c:${idClube} c:temEstadio ?est.
+        ?est c:nome ?estadio.
+        ?est c:imagem ?imgEstadio.
+        ?est c:coordenadas ?cordEstadio.
+        c:${idClube} c:valor_mercado ?valor.
+        c:${idClube} c:pagina_oficial ?pagina.
+        optional{c:${idClube} c:simbolo ?simb.}
     } ` 
     var encoded = encodeURIComponent(prefixes + query)
     try{

@@ -1,8 +1,7 @@
 <template>
   <v-card>
     <v-card-title class="indigo darken-4 white--text" dark>
-      Liga Nos "Temporada 2019/20": Informações sobre a liga 
-      <span class="headline">"{{ liga.info.idLiga }}"</span>
+      <span class="headline">Liga Nos "Temporada 2019/20": Informações sobre a liga  "{{ liga.info.idLiga }}"</span>
       <v-spacer></v-spacer>
     </v-card-title> 
     <v-card-text>
@@ -81,6 +80,14 @@
       <v-row>
         <v-col cols="2">
           <div class="info-label">Valor de Mercado na Liga</div>
+        </v-col>
+        <v-col>
+          <div class="info-content">{{ liga.info.valor }}</div>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="2">
+          <div class="info-label">Página Oficial</div>
         </v-col>
         <v-col>
           <div class="info-content">{{ liga.info.valor }}</div>

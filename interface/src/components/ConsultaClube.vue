@@ -5,7 +5,7 @@
         </v-alert>
         <v-card v-else>
             <v-card-title class="indigo darken-4 white--text" dark>
-                <span class="headline">"{{ clube.info.nome }}" ({{idClube}})</span>
+                <span class="headline">"{{ clube.info.nome }}"</span>
             </v-card-title>
             <v-card-text>
                 <v-row>
@@ -54,6 +54,14 @@
                   </v-col>
                   <v-col>
                     <div class="info-content">{{ clube.info.balanco }}</div>
+                  </v-col>
+                </v-row>
+                <v-row>
+                  <v-col cols="2">
+                    <div class="info-label">Página Oficial</div>
+                  </v-col>
+                  <v-col>
+                    <div class="info-content">{{ clube.info.pagina }}</div>
                   </v-col>
                 </v-row>
 
