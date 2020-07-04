@@ -7,8 +7,10 @@
             <div class="info-content">
                 <ul>
                     <li>
-                        <span v-for="j in lista" :key="j.idJogador">
-                            <a href="/jogadores">{{ j.nome }}</a>;
+                        <span v-for="j in lista" :key="j.idJogador"
+                            @click="mostraJogador(j)"
+                        >
+                                <v-btn text small>{{ j.nome }};</v-btn>
                         </span>
                     </li>
                 </ul>
@@ -22,5 +24,18 @@
 export default {
   name: 'Jogadores',
   props: ["lista"],
+
+  methods: {
+    mostraJogador: function(item){
+      this.$router.push("/jogadores/" + item.idJogador);
+    }
+  }
+  /*
+  <span v-for="j in lista" :key="j.idJogador"
+                            @click="mostraJogador(j.idJogador)"
+                        >
+                            {{ j.nome }};
+                        </span>
+  */
 }
 </script>

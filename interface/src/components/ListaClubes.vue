@@ -3,6 +3,13 @@
         <v-card-title class="indigo darken-4 white--text" dark>
             Liga Nos "Temporada 2019/20": Clubes da liga
             <v-spacer></v-spacer>
+            <v-chip
+              class="mr-2"
+              @click="about()"
+            >
+              <v-icon left>mdi-information</v-icon>
+              About
+            </v-chip>
             <v-text-field
               v-model="filtrar"
               label="Filtrar"
@@ -45,6 +52,8 @@ const lhost = require("@/config/global").host;
 
 import { mdiAccount } from '@mdi/js';
 
+//import About from '@/components/About.vue'
+
 export default {
   name: 'ListaClubes',
 
@@ -79,9 +88,16 @@ export default {
 
   methods: {
     mostraClube: function(item){
-      alert('Cliquei no clube: ' + JSON.stringify(item));
+      //alert('Cliquei no clube: ' + JSON.stringify(item));
       this.$router.push("/clubes/" + item.idClube);
-    }
+    },
+    
+    about: function(){
+      //alert(About)
+      alert('Liga NOS 19/20');
+      this.$router.push("/about");
+    },
+      
   }
   
 }

@@ -8,7 +8,7 @@
                 <ul>
                     <li>
                         <span v-for="n in lista" :key="n.nacionalidade">
-                            <a href=#>{{ n.nacionalidade }}</a>
+                            {{ n.nacionalidade }};
                         </span>
                     </li>
                 </ul>

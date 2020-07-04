@@ -28,6 +28,11 @@ Vue.use(VueRouter)
     path: '/jogadores/:id',
     name: 'Consulta Jogador',
     component: () => import('../views/ConsultaJogador.vue')
+  },
+  {
+    path: '/about',
+    name: 'Informação Liga',
+    component: () => import('../views/About.vue')
   }
 ]
 

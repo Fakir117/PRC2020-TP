@@ -82,7 +82,7 @@ export default {
 
   methods: {
     mostraJogador: function(item){
-      alert('Cliquei no jogador: ' + JSON.stringify(item));
+      //alert('Cliquei no jogador: ' + JSON.stringify(item));
       this.$router.push("/jogadores/" + item.idJogador);
     }
   }

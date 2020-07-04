@@ -22,12 +22,12 @@ var prefixes = `
 
 var getLink = "http://localhost:7200/repositories/ligaNos" + "?query=" 
 
-Liga.getInformacao = async function(){
+Liga.getInformacao = async function(idLiga){
     var query = `select * where{
-        ?liga a c:Liga.
-        ?liga c:ano_de_fundacao ?fundacao.   
-        ?liga c:temporada_atual ?temporada.
-        ?liga c:atual_Campeao ?camp.
+        ?liga a c:Liga;
+                    c:ano_de_fundacao ?fundacao;  
+                    c:temporada_atual ?temporada;
+                    c:atual_Campeao ?camp.
     	?camp c:nome ?clube.
         optional{ ?liga c:campeao_recordista ?record.
     			  ?record c:nome ?recordClub.}
@@ -39,13 +39,21 @@ Liga.getInformacao = async function(){
         optional{ ?liga c:total_jogadores_estrangeiros ?jogEstrg.}
         optional{ ?liga c:jogador_mais_valioso ?jogVal.
     			  ?jogVal c:nome ?jogador.}
-        optional{ ?liga c:valor_mercado ?valor.}  
+        optional{ ?liga c:valor_mercado ?valor.} 
+        bind(strafter(str(?liga), 'LigaNos#') as ?idLiga) . 
     } ` 
     var encoded = encodeURIComponent(prefixes + query)
 
     try{
         var response = await axios.get(getLink + encoded)
-        return myNormalize(response.data)
+        //return myNormalize(response.data)
+        var atomica = myNormalize(response.data)
+        
+        var liga = {
+            info : atomica[0]
+        }
+        return liga
+        
     }
     catch(e){
         throw(e)

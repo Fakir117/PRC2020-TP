@@ -8,7 +8,7 @@
                 <ul>
                     <li>
                         <span v-for="p in lista" :key="p.pal">
-                            <a href="#">{{ p.taca }}</a>
+                            {{ p.taca }};
                         </span>
                     </li>
                 </ul>
