@@ -3,15 +3,16 @@
    "data_de_criação":"1930",
    "temporada_atual":"2019/20",
    "atual_campeão":"Sport Lisboa e Benfica",
-   "campeão_recordista":"Sport Lisboa e Benfica (37 títulos)",
+   "campeão_recordista":"Sport Lisboa e Benfica",
    "recorde_títulos":"37",
    "recorde_melhor_ataque":"",
    "recorde_melhor_defesa":"",
    "número_de_jogadores":459,
    "número_de_jogadores_estrangeiros":279,
    "número_de_equipas":18,
-   "jogador_mais_valioso":"Alex Telles (32M €)",
+   "jogador_mais_valioso":"Alex Telles 13",
    "valor_de_mercado":"904,15M €",
+   "link":"https://liganos.pt",
    "equipas":[
       {
          "nome":"Sport Lisboa e Benfica",
@@ -20,7 +21,7 @@
          "anos_na_liga":23,
          "palmarés":[
             {
-               "designação":"liga dos Campeões",
+               "designação":"Liga dos Campeões",
                "número":2
             },
             {
@@ -40,9 +41,15 @@
                "número":8
             }
          ],
-         "estádio":"Estádio da Luz",
+         "estádio":[{
+            "nome":"Estádio da Luz",
+            "imagem":"https://mfimages.iol.pt/soccer/venues/600x450/525.jpg",
+            "coordenadas":"38.752648359600805, -9.184699058532715"
+         }],
+         "simbolo":"https://tmssl.akamaized.net/images/wappen/head/294.png?lm=1535908439",
          "balanço_transferências":"158 M",
          "valor_de_mercado":"269,6 M",
+         "link":"https://www.slbenfica.pt",
          "plantel":[
             {
                "nome":"Odysseas Vlachodimos",
@@ -195,7 +202,7 @@
             },
             {
                "nome":"André Almeida",
-               "posicao":"Lateral Direiro",
+               "posicao":"Lateral Direito",
                "idade":"29",
                "número":"34",
                "nacionalidade":[
@@ -448,7 +455,7 @@
          "anos_na_liga":23,
          "palmarés":[
             {
-               "designação":"liga dos Campeões",
+               "designação":"Liga dos Campeões",
                "número":2
             },
             {
@@ -476,9 +483,15 @@
                "número":1
             }
          ],
-         "estádio":"Estádio do Dragão",
+         "estádio":[{
+            "nome":"Estádio do Dragão",
+            "imagem":"https://mfimages.iol.pt/soccer/venues/600x450/530.jpg",
+            "coordenadas":"41.1617908503053, -8.583739399909973"
+         }],
+         "simbolo":"https://tmssl.akamaized.net/images/wappen/head/720.png?lm=1486310161",
          "balanço_transferências":"24,91 M €",
          "valor_de_mercado":"216,73 M €",
+         "link":"https://www.fcporto.pt/pt",
          "plantel":[
             {
                "nome":"Augustin Marchesin",
@@ -595,7 +608,7 @@
                "assistencias_na_epoca":"0"
             },
             {
-               "nome":"Alex telles",
+               "nome":"Alex Telles",
                "posicao":"Lateral Esquerdo",
                "idade":"27",
                "número":"13",
@@ -902,9 +915,14 @@
                "número":8
             }
          ],
-         "estádio":"Estádio José de Alvalade",
+         "estádio":[{
+            "nome":"Estádio José de Alvalade",
+            "imagem":"https://mfimages.iol.pt/soccer/venues/600x450/529.jpg",
+            "coordenadas":"38.761207228440945, -9.160875678062439"}],
+         "simbolo":"https://tmssl.akamaized.net/images/wappen/head/336.png?lm=1487424635",      
          "balanço_transferências":"75,13 M €",
          "valor_de_mercado":"90,25 M €",
+         "link":"https://www.sporting.pt/pt",
          "plantel":[
             {
                "nome":"Luis Maximiano",
@@ -1362,9 +1380,15 @@
                "número":2
             }
          ],
-         "estádio":"Estádio AXA",
+         "estádio":[{
+            "nome":"Estádio AXA",
+            "imagem":"https://mfimages.iol.pt/soccer/venues/600x450/531.jpg",
+            "coordenadas":"41.562553701802194, -8.429903984069824"
+         }],
+         "simbolo":"https://tmssl.akamaized.net/images/wappen/head/1075.png?lm=1432893871",
          "balanço_transferências":"24,4 M €",
          "valor_de_mercado":"89,5 M €",
+         "link":"https://scbraga.pt",
          "plantel":[
             {
                "nome":"Matheus",
@@ -1788,7 +1812,7 @@
          ]
       },
       {
-         "nome":"Vitório Sport Clube",
+         "nome":"Vitória Sport Clube",
          "ano_de_fundacao":"1922",
          "posicao":"7",
          "anos_na_liga":"13",
@@ -1802,9 +1826,15 @@
                "número":1
             }
          ],
-         "estádio":"Estádio D. Afonso Henriques",
+         "estádio":[{
+            "nome":"Estádio D. Afonso Henriques",
+            "imagem":"https://mfimages.iol.pt/soccer/venues/600x450/534.jpg",
+            "coordenadas":"41.445903097491914, -8.300943374633789"
+         }],
+         "simbolo":"https://tmssl.akamaized.net/images/wappen/head/2420.png?lm=1432894021",
          "balanço_transferências":"19,6 M €",
          "valor_de_mercado":"40,38 M €",
+         "link":"https://www.vitoriasc.pt/pt/",
          "plantel":[
             {
                "nome":"Jhonatan",
@@ -2214,7 +2244,7 @@
             },
             {
                "nome":"Rochinha",
-               "posicao":"Extremo Direiro",
+               "posicao":"Extremo Direito",
                "idade":"25",
                "número":"16",
                "nacionalidade":[
@@ -2320,9 +2350,15 @@
          "palmarés":[
 
          ],
-         "estádio":"Estádio dos Arcos",
+         "estádio":[{
+            "nome":"Estádio dos Arcos",
+            "imagem":"https://mfimages.iol.pt/soccer/venues/600x450/536.jpg",
+            "coordenadas":"41.362774699560454, -8.740214109420776"
+         }],
+         "simbolo":"https://tmssl.akamaized.net/images/wappen/head/2425.png?lm=1516613968",
          "balanço_transferências":"4,25 M €",
          "valor_de_mercado":"19,73 M €",
+         "link":"https://rioavefc.pt",
          "plantel":[
             {
                "nome":"Pawel Kieszek",
@@ -2721,9 +2757,15 @@
          "palmarés":[
 
          ],
-         "estádio":"Estádio dos Barreiros",
+         "estádio":[{
+            "nome":"Estádio dos Barreiros",
+            "imagem":"https://mfimages.iol.pt/soccer/venues/600x450/526.jpg",
+            "coordenadas":"32.645576883425214, -16.928290128707886"
+         }],
+         "simbolo":"https://tmssl.akamaized.net/images/wappen/head/1301.png?lm=1432894070",
          "balanço_transferências":"-250 K €",
          "valor_de_mercado":"13,93 M €",
+         "link":"https://www.csmaritimo.org.pt",
          "plantel":[
             {
                "nome":"Amir Abedzadeh",
@@ -3099,9 +3141,15 @@
                "número":1
             }
          ],
-         "estádio":"Estádio do Bonfim",
+         "estádio":[{
+            "nome":"Estádio do Bonfim",
+            "imagem":"https://mfimages.iol.pt/soccer/venues/600x450/539.jpg",
+            "coordenadas":"38.53137755425208, -8.89119565486908"
+         }],
+         "simbolo":"https://tmssl.akamaized.net/images/wappen/head/1085.png?lm=1547543194",
          "balanço_transferências":"1,5 M €",
          "valor_de_mercado":"12,78 M €",
+         "link":"https://vfc.pt",
          "plantel":[
             {
                "nome":"Giorgi Makaridze",
@@ -3564,9 +3612,15 @@
          "palmarés":[
 
          ],
-         "estádio":"Estádio Nacional do Jamor",
+         "estádio":[{
+            "nome":"Estádio Nacional do Jamor",
+            "imagem":"https://mfimages.iol.pt/soccer/venues/600x450/4852.jpg",
+            "coordenadas":"38.7088214214364, -9.260889887809753"
+         }],
+         "simbolo":"https://tmssl.akamaized.net/images/wappen/head/2457.png?lm=1552479825",
          "balanço_transferências":"500 K €",
          "valor_de_mercado":"12 M €",
+         "link":"http://site.osbelenensessad.com",
          "plantel":[
             {
                "nome":"Hervé Koffi",
@@ -3978,9 +4032,15 @@
                "número":3
             }
          ],
-         "estádio":"Estádio do Bessa",
+         "estádio":[{
+            "nome":"Estádio do Bessa",
+            "imagem":"https://mfimages.iol.pt/soccer/venues/600x450/1537.jpg",
+            "coordenadas":"41.16224317458759, -8.642533421516418"
+         }],
+         "simbolo":"https://tmssl.akamaized.net/images/wappen/head/2503.png?lm=1480959207",
          "balanço_transferências":"3 M €",
          "valor_de_mercado":"12,85 M €",
+         "link":"https://boavistafc.pt",
          "plantel":[
             {
                "nome":"Helton Leite",
@@ -4399,9 +4459,15 @@
                "número":1
             }
          ],
-         "estádio":"E. C. J. de Almeida Freitas",
+         "estádio":[{
+            "nome":"E. C. J. de Almeida Freitas",
+            "imagem":"https://mfimages.iol.pt/soccer/venues/600x450/5870.jpg",
+            "coordenadas":"41.37808861279996, -8.354759216308594"
+         }],
+         "simbolo":"https://tmssl.akamaized.net/images/wappen/head/979.png?lm=1552324606",
          "balanço_transferências":"3,75 M €",
          "valor_de_mercado":"12 M €",
+         "link":"https://www.moreirensefc.pt",
          "plantel":[
             {
                "nome":"Mateus Pasinato",
@@ -4851,9 +4917,15 @@
          "palmarés":[
 
          ],
-         "estádio":"Estádio João Cardoso",
+         "estádio":[{
+            "nome":"Estádio João Cardoso",
+            "imagem":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Estádio_João_Cardoso.jpg/1920px-Estádio_João_Cardoso.jpg",
+            "coordenadas":"40.51204546470865, -8.082852959632874"
+         }],
+         "simbolo":"https://tmssl.akamaized.net/images/wappen/head/7179.png?lm=1506427804",
          "balanço_transferências":"1,15 M €",
          "valor_de_mercado":"11,38 M €",
+         "link":"http://www.cdtondela.pt",
          "plantel":[
             {
                "nome":"Cláudio Ramos",
@@ -5251,9 +5323,15 @@
          "palmarés":[
 
          ],
-         "estádio":"Estádio de São Miguel",
+         "estádio":[{
+            "nome":"Estádio de São Miguel",
+            "imagem":"https://mfimages.iol.pt/soccer/venues/600x450/1540.jpg",
+            "coordenadas":"37.76370502216807, -25.62257945537567"
+         }],
+         "simbolo":"https://tmssl.akamaized.net/images/wappen/head/2423.png?lm=1564481385",
          "balanço_transferências":"3,15 M €",
          "valor_de_mercado":"12,05 M €",
+         "link":"https://cdsantaclara.com",
          "plantel":[
             {
                "nome":"André Ferreira",
@@ -5656,9 +5734,15 @@
                "número":1
             }
          ],
-         "estádio":"Estádio CD das Aves",
+         "estádio":[{
+            "nome":"Estádio CD das Aves",
+            "imagem":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Estádio_do_CD_Aves.jpg/1920px-Estádio_do_CD_Aves.jpg",
+            "coordenadas":"41.36682897010737, -8.411852717399597"
+         }],
+         "simbolo":"https://tmssl.akamaized.net/images/wappen/head/3336.png?lm=1534502701",
          "balanço_transferências":"400 K €",
          "valor_de_mercado":"10,05 M €",
+         "link":"http://cdaves.pt",
          "plantel":[
             {
                "nome":"Raphael Aflalo",
@@ -6110,9 +6194,15 @@
          "palmarés":[
 
          ],
-         "estádio":"Portimão Estádio",
+         "estádio":[{
+            "nome":"Portimão Estádio",
+            "imagem":"https://mfimages.iol.pt/soccer/venues/600x450/1546.jpg",
+            "coordenadas":"37.135700416749145, -8.539837002754211"
+         }],
+         "simbolo":"https://tmssl.akamaized.net/images/wappen/head/7378.png?lm=1516718554",
          "balanço_transferências":"-2.2 M €",
          "valor_de_mercado":"18,18 M €",
+         "link":"https://www.portimonense.pt",
          "plantel":[
             {
                "nome":"Ricardo Ferreira",
@@ -6510,9 +6600,15 @@
          "palmarés":[
 
          ],
-         "estádio":"Estádio Capital do Móvel",
+         "estádio":[{
+            "nome":"Estádio Capital do Móvel",
+            "imagem":"https://mfimages.iol.pt/soccer/venues/600x450/540.jpg",
+            "coordenadas":"41.271367898670725, -8.38558316230774"
+         }],
+         "simbolo":"https://tmssl.akamaized.net/images/wappen/head/2995.png?lm=1578477741",
          "balanço_transferências":"950 K €",
          "valor_de_mercado":"12,33 M €",
+         "link":"https://www.fcpf.pt",
          "plantel":[
             {
                "nome":"Ricardo Ribeiro",
@@ -6927,9 +7023,15 @@
          "palmarés":[
 
          ],
-         "estádio":"Estádio Municipal de Famalicão",
+         "estádio":[{
+            "nome":"Estádio Municipal de Famalicão",
+            "imagem":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/EstádioMunicipalFamalicao.jpg/1920px-EstádioMunicipalFamalicao.jpg",
+            "coordenadas":"41.40144303510442, -8.52239191532135"
+         }],
+         "simbolo":"https://tmssl.akamaized.net/images/wappen/head/3329.png?lm=1565881258",
          "balanço_transferências":"0",
          "valor_de_mercado":"36,45 M €",
+         "link":"https://www.fcfamalicao.pt",
          "plantel":[
             {
                "nome":"Vaná Alves",
@@ -7313,9 +7415,15 @@
          "palmarés":[
 
          ],
-         "estádio":"Estádio Municipal de Barcelos",
+         "estádio":[{
+            "nome":"Estádio Municipal de Barcelos",
+            "imagem":"https://mfimages.iol.pt/soccer/venues/600x450/1545.jpg",
+            "coordenadas":"41.55112933644525, -8.62303376197815"
+         }],
+         "simbolo":"https://tmssl.akamaized.net/images/wappen/head/2424.png?lm=1416391504",
          "balanço_transferências":"877 K €",
          "valor_de_mercado":"11,35 M €",
+         "link":"https://gilvicentefc.pt",
          "plantel":[
             {
                "nome":"Denis",

@@ -4,6 +4,7 @@ jsonfile.readFile(file)
     .then(obj => {
         var clubes = []
         var jogadores = []
+        var estadio = []
         var palmares = []
         var nacionalidade = []
         console.log("\n### LIGA ###\n")
@@ -21,6 +22,7 @@ jsonfile.readFile(file)
             liga += "\t\t\t:total_equipas \"" + obj[i].número_de_equipas + "\";\n"
             liga += "\t\t\t:jogador_mais_valioso :" + removerAcentos(obj[i].jogador_mais_valioso).replace(/\W/g,'_') + ";\n"
             liga += "\t\t\t:valor_mercado \"" + obj[i].valor_de_mercado + "\";\n"
+            liga += "\t\t\t:pagina_oficial \"" + obj[i].link + "\";\n"
             
             obj[i].equipas.forEach(equipa => {
                 if(clubes.indexOf(equipa.nome) == -1){
@@ -28,7 +30,8 @@ jsonfile.readFile(file)
                 }
                 liga += "\t:temClube :" + removerAcentos(equipa.nome).replace(/\W/g,'_') +";\n"
             })
-            liga += "\t\t\t:ano_de_fundacao \"" + obj[i].data_de_criação + "\".\n"
+            liga += "\t\t\t:ano_de_fundacao \"" + obj[i].data_de_criação + "\";\n"
+            liga += "\t\t\t:nome \"" + obj[i].nome_da_liga + "\".\n"
             console.log(liga)
         }
         console.log("\n### CLUBES ###\n")
@@ -42,6 +45,8 @@ jsonfile.readFile(file)
             clube += "\t\t\t :estadio \"" + clubes[i].estádio + "\";\n\n"
             clube += "\t\t\t :balanco_transferencias \"" + clubes[i].balanço_transferências + "\";\n\n"
             clube += "\t\t\t :valor_mercado \"" + clubes[i].valor_de_mercado + "\";\n\n"
+            clube += "\t\t\t :pagina_oficial \"" + clubes[i].link + "\";\n\n"
+            clube += "\t\t\t :simbolo \"" + clubes[i].simbolo + "\";\n\n"
             
             clubes[i].palmarés.forEach(taca => {
                 if(palmares.indexOf(taca) == -1){
@@ -50,11 +55,18 @@ jsonfile.readFile(file)
                 clube += "\t:temPalmares :" + removerAcentos(taca.designação).replace(/\W/g,'_') +";\n"
             })
 
+            clubes[i].estádio.forEach(est => {
+                if(estadio.indexOf(est) == -1){
+                    estadio.push(est)
+                }
+                clube += "\t:temEstadio :" + removerAcentos(est.nome).replace(/\W/g,'_') +";\n"
+            })
+            
             clubes[i].plantel.forEach(jog => {
                 if(jogadores.indexOf(jog) == -1){
                     jogadores.push(jog)
                 }
-                clube += "\t:temJogador :" + removerAcentos(jog.nome).replace(/\W/g,'_') +";\n"
+                clube += "\t:temJogador :" + removerAcentos(jog.nome).replace(/\W/g,'_') + "_" + jog.número +";\n"
             })
 
             clube += "\t\t\t :nome \"" + clubes[i].nome.replace(/\"/g,'\'') + "\".\n\n"
@@ -63,8 +75,8 @@ jsonfile.readFile(file)
         console.log("\n### JOGADORES ###\n")
         for(var i=0; i<jogadores.length; i++){
             var jogador = ""
-            jogador += "###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#" + removerAcentos(jogadores[i].nome).replace(/\W/g, '_') + '\n'
-            jogador += ":" + removerAcentos(jogadores[i].nome).replace(/\W/g, '_') + " rdf:type owl:NamedIndividual,\n\t\t\t :Jogador;\n";
+            jogador += "###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#" + removerAcentos(jogadores[i].nome).replace(/\W/g, '_') + "_" + jogadores[i].número + '\n'
+            jogador += ":" + removerAcentos(jogadores[i].nome).replace(/\W/g, '_') + "_" + jogadores[i].número + " rdf:type owl:NamedIndividual,\n\t\t\t :Jogador;\n";
             jogador += "\t\t\t :posicao \"" + jogadores[i].posicao + "\";\n\n"
             jogador += "\t\t\t :idade \"" + jogadores[i].idade + "\";\n\n"
             jogador += "\t\t\t :camisola \"" + jogadores[i].número + "\";\n\n"
@@ -102,6 +114,27 @@ jsonfile.readFile(file)
             taca += "\t\t\t :nome \"" + palmares[i].designação.replace(/\"/g,'\'') + "\".\n\n"
             console.log(taca)    
         }
+        console.log("\n### Estádio ###\n")
+        estadio.forEach(e => {
+            var estad = ""
+            estad += "###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#" + removerAcentos(e.nome).replace(/\W/g, '_') + '\n'
+            estad += ":" + removerAcentos(e.nome).replace(/\W/g, '_') + " rdf:type owl:NamedIndividual,\n\t\t\t :Estadio;\n";
+            estad += "\t\t\t :imagem \"" + e.imagem.replace(/\"/g,'\'') + "\";\n\n"
+            estad += "\t\t\t :coordenadas \"" + e.coordenadas.replace(/\"/g,'\'') + "\";\n\n"
+            estad += "\t\t\t :nome \"" + e.nome.replace(/\"/g,'\'') + "\".\n\n"
+            console.log(estad) 
+        })
+        /*
+        for(var i=0; i<estadio.length; i++){
+            var estad = ""
+            estad += "###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#" + removerAcentos(estadio[i].nome).replace(/\W/g, '_') + '\n'
+            estad += ":" + removerAcentos(estadio[i].nome).replace(/\W/g, '_') + " rdf:type owl:NamedIndividual,\n\t\t\t :Estadio;\n";
+            estad += "\t\t\t :imagem \"" + estadio[i].imagem.replace(/\"/g,'\'') + "\";\n\n"
+            estad += "\t\t\t :coordenadas \"" + estadio[i].coordenadas.replace(/\"/g,'\'') + "\";\n\n"
+            estad += "\t\t\t :nome \"" + estadio[i].nome.replace(/\"/g,'\'') + "\".\n\n"
+            console.log(estad)    
+        }
+        */
     })
 
     function removerAcentos( newStringComAcento ) {
