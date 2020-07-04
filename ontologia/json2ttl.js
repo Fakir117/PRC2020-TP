@@ -13,13 +13,13 @@ jsonfile.readFile(file)
             liga += ":" + obj[i].nome_da_liga.replace(/\W/g, '_') + " rdf:type owl:NamedIndividual, \n\t\t\t:Liga;\n"
             liga += "\t\t\t:ano_de_fundacao \"" + obj[i].data_de_criação + "\";\n"
             liga += "\t\t\t:temporada_atual \"" + obj[i].temporada_atual + "\";\n"
-            liga += "\t\t\t:atual_campeao \"" + obj[i].atual_campeão + "\";\n"
-            liga += "\t\t\t:campeao_recordista \"" + obj[i].campeão_recordista + "\";\n"
+            liga += "\t\t\t:atual_campeao :" + removerAcentos(obj[i].atual_campeão).replace(/\W/g,'_') + ";\n"
+            liga += "\t\t\t:campeao_recordista :" + removerAcentos(obj[i].campeão_recordista).replace(/\W/g,'_') + ";\n"
             liga += "\t\t\t:recorde_titulos \"" + obj[i].recorde_títulos + "\";\n"
             liga += "\t\t\t:total_jogadores \"" + obj[i].número_de_jogadores + "\";\n"
             liga += "\t\t\t:total_jogadores_estrangeiros \"" + obj[i].número_de_jogadores_estrangeiros + "\";\n"
             liga += "\t\t\t:total_equipas \"" + obj[i].número_de_equipas + "\";\n"
-            liga += "\t\t\t:jogador_mais_valioso \"" + obj[i].jogador_mais_valioso + "\";\n"
+            liga += "\t\t\t:jogador_mais_valioso :" + removerAcentos(obj[i].jogador_mais_valioso).replace(/\W/g,'_') + ";\n"
             liga += "\t\t\t:valor_mercado \"" + obj[i].valor_de_mercado + "\";\n"
             
             obj[i].equipas.forEach(equipa => {
