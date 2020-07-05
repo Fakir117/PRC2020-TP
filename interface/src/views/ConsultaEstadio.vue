@@ -1,15 +1,15 @@
 <template>
-    <About />
+    <ConsultaEstadio :idEstadio="$route.params.id" />
 </template>
 
 <script>
 // @ is an alias to /src
-import About from '@/components/About.vue'
+import ConsultaEstadio from '@/components/ConsultaEstadio.vue'
 
 export default {
-  name: 'Informação',
+  name: 'Consulta de um estadio',
   components: {
-    About
+    ConsultaEstadio
   }
 }
 </script>

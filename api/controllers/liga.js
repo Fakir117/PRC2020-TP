@@ -43,6 +43,8 @@ Liga.getInformacao = async function(){
         optional{ ?liga c:valor_mercado ?valor.} 
         optional{ ?liga c:pagina_oficial ?pagina.} 
         bind(strafter(str(?liga), 'LigaNos#') as ?idLiga) . 
+        bind(strafter(str(?camp), 'LigaNos#') as ?champ) . 
+        bind(strafter(str(?record), 'LigaNos#') as ?recordChamp) . 
     } ` 
     var encoded = encodeURIComponent(prefixes + query)
 
@@ -141,7 +143,7 @@ Liga.getListaJogadores = async function(){
 }
 
 Liga.getListaEstadios = async function(){
-    var query = `select distinct * where{
+    var query = `select * where{
         ?e c:nome ?estadio.
         ?e c:coordenadas ?coord.
         ?e c:eEstadioDe ?c.
@@ -175,8 +177,9 @@ async function getJogadorAtomica(idJogador){
                   c:clube_anterior ?clubAnt;
                   c:validade_contrato ?contrato;
                   c:valor_mercado ?valor;
-                  c:eJogadorDe ?clu.
-        ?clu c:nome ?clube.
+                  c:eJogadorDe ?c.
+        ?c c:nome ?clube.
+        bind(strafter(str(?c), 'LigaNos#') as ?clu) .  
     }`
     var encoded = encodeURIComponent(prefixes + query)
 
@@ -205,6 +208,32 @@ Liga.getNacionalidadeJogador = async function(idJogador){
     }
 }
 
+Liga.getEstadio = async function(idEstadio){
+    var query = `select * where{
+        c:${idEstadio} c:nome ?nome;
+                c:coordenadas ?coord;
+                c:eEstadioDe ?c;
+                c:imagem ?imagem.
+        ?c c:nome ?clube.
+        bind(strafter(str(?c), 'LigaNos#') as ?clu) .  
+    } ` 
+    var encoded = encodeURIComponent(prefixes + query)
+
+    try{
+        var response = await axios.get(getLink + encoded)
+        //return myNormalize(response.data)
+        var atomica = myNormalize(response.data)
+        
+        var estadio = {
+            info : atomica[0]
+        }
+        return estadio
+    }
+    catch(e){
+        throw(e)
+    }
+}
+
 async function getClubeAtomica(idClube){
     var query = `select * where{
         c:${idClube} rdf:type c:Clube.
@@ -220,6 +249,7 @@ async function getClubeAtomica(idClube){
         c:${idClube} c:valor_mercado ?valor.
         c:${idClube} c:pagina_oficial ?pagina.
         optional{c:${idClube} c:simbolo ?simb.}
+        bind(strafter(str(?est), 'LigaNos#') as ?e) .  
     } ` 
     var encoded = encodeURIComponent(prefixes + query)
     try{

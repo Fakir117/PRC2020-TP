@@ -38,6 +38,13 @@
                         >
                     </v-avatar>
                 </template>
+                <template v-slot:item.ops="{ item }">
+                    <v-icon
+                     @click="mostraEstadio(item)"
+                    >
+                        {{ verEstadio }}
+                    </v-icon>
+                </template>
             </v-data-table>
         </v-card-text>
         <v-card-actions>
@@ -52,7 +59,7 @@
 import axios from 'axios'
 const lhost = require("@/config/global").host;
 
-//import { mdiAccount } from '@mdi/js';
+import { mdiAccount } from '@mdi/js';
 
 export default {
   name: 'ListaEstadios',
@@ -63,6 +70,7 @@ export default {
       {text: "Nome", sortable: true, value: 'estadio', class: 'subtitle-1'},
       {text: "Clube", sortable: true, value: 'clube', class: 'subtitle-1'},
       {text: "Coordenadas", sortable: true, value: 'coord', class: 'subtitle-1', filterable: false},
+      {text: "Operações", value: 'ops', class: 'subtitle-1'}
     ],
     footer_props: {
       "items-per-page-text": "Mostrar",
@@ -72,7 +80,7 @@ export default {
 
     estadios: [],
     filtrar: "",
-    //verEstadio: mdiAccount
+    verEstadio: mdiAccount
   }),
 
   created: async function(){
@@ -87,12 +95,11 @@ export default {
 
   methods: {
     mostraEstadio: function(item){
-      //alert('Cliquei no clube: ' + JSON.stringify(item));
-      this.$router.push("/clubes/" + item.idClube);
+      //alert('Cliquei no estadio: ' + JSON.stringify(item));
+      this.$router.push("/estadios/" + item.idEstadio);
     },
     
     about: function(){
-      //alert(About)
       alert('Liga NOS 19/20');
       this.$router.push("/about");
     },

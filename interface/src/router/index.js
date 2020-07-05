@@ -20,6 +20,11 @@ Vue.use(VueRouter)
     component: () => import('../views/Jogadores.vue')
   },
   {
+    path: '/estadios',
+    name: 'Estadios',
+    component: () => import('../views/Estadios.vue')
+  },
+  {
     path: '/clubes/:id',
     name: 'Consulta Clube',
     component: () => import('../views/ConsultaClube.vue')
@@ -30,14 +35,14 @@ Vue.use(VueRouter)
     component: () => import('../views/ConsultaJogador.vue')
   },
   {
+    path: '/estadios/:id',
+    name: 'Consulta Estadio',
+    component: () => import('../views/ConsultaEstadio.vue')
+  },
+  {
     path: '/about',
     name: 'Informação Liga',
     component: () => import('../views/About.vue')
-  },
-  {
-    path: '/estadios',
-    name: 'Estadios',
-    component: () => import('../views/Estadios.vue')
   },
 ]
 

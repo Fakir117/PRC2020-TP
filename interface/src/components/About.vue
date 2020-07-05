@@ -26,7 +26,7 @@
           <div class="info-label">Campeão atual</div>
         </v-col>
         <v-col>
-          <div class="info-content">{{ liga.info.clube }}</div>
+          <div class="info-content"><a @click="mostraClube(liga.info.champ)">{{ liga.info.clube }}</a></div>
         </v-col>
       </v-row>
       <v-row>
@@ -34,7 +34,7 @@
           <div class="info-label">Campeão Recordista de títulos</div>
         </v-col>
         <v-col>
-          <div class="info-content">{{ liga.info.recordClub }}</div>
+          <div class="info-content"><a @click="mostraClube(liga.info.recordChamp)">{{ liga.info.recordClub }}</a></div>
         </v-col>
       </v-row>
       <v-row>
@@ -90,7 +90,7 @@
           <div class="info-label">Página Oficial</div>
         </v-col>
         <v-col>
-          <div class="info-content"><a :href=liga.info.pagina >{{ liga.info.pagina }}</a></div>
+          <div class="info-content"><a @click="myFunction(liga.info.pagina)" >{{ liga.info.pagina }}</a></div>
         </v-col>
       </v-row>
     </v-card-text>
@@ -128,7 +128,14 @@ export default {
     }
   },
 
-  methods: {}
+  methods: {
+    myFunction: function(link) {
+      window.open(link)
+    },
+    mostraClube: function(item){
+      this.$router.push("/clubes/" + item);
+    }
+  }
   
 }
 </script>

@@ -43,7 +43,7 @@
                     <div class="info-label">Estádio</div>
                   </v-col>
                   <v-col>
-                    <div class="info-content">{{ clube.info.estadio }}</div>
+                    <div class="info-content"><a @click="mostraEstadio(clube.info.e)">{{ clube.info.estadio }}</a></div>
                   </v-col>
                 </v-row>
                 <v-row>
@@ -51,7 +51,7 @@
                     <div class="info-label">Coordenadas do Estádio</div>
                   </v-col>
                   <v-col>
-                    <div class="info-content">{{ clube.info.coordEstadio }}</div>
+                    <div class="info-content"><a @click="myFunction('https://maps.google.com/?q='+clube.info.coordEstadio)">{{ clube.info.coordEstadio }}</a></div>
                   </v-col>
                 </v-row>
                 <v-row>
@@ -75,7 +75,7 @@
                     <div class="info-label">Página Oficial</div>
                   </v-col>
                   <v-col>
-                    <div class="info-content"><a :href=clube.info.pagina >{{clube.info.pagina }}</a></div>
+                    <div class="info-content"><a @click="myFunction(clube.info.pagina)" >{{clube.info.pagina }}</a></div>
                   </v-col>
                 </v-row>
 
@@ -118,7 +118,6 @@ export default {
     try {
       let response = await axios.get(lhost + "/clubes/" + this.idClube);
       this.clube = response.data;
-      //this.clube.jogadores.sort((a,b) => a.anome > b.anome? 1: -1);
       this.clubeCarregado = true;
     } 
     catch (e) {
@@ -126,7 +125,14 @@ export default {
     }
   },
 
-  methods: {}
+  methods: {
+    myFunction: function(link) {
+      window.open(link)
+    },
+    mostraEstadio: function(item){
+      this.$router.push("/estadios/" + item);
+    }
+  }
   
 }
 </script>

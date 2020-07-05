@@ -14,7 +14,7 @@
                     <div class="info-label">Clube Atual</div>
                   </v-col>
                   <v-col>
-                    <div class="info-content">{{ jogador.info.clube }}</div>
+                    <div class="info-content"><a @click="mostraClube(jogador.info.clu)">{{ jogador.info.clube }}</a></div>
                   </v-col>
                 </v-row>
                 <v-row>
@@ -140,7 +140,11 @@ export default {
     }
   },
 
-  methods: {}
+  methods: {
+    mostraClube: function(item){
+      this.$router.push("/clubes/" + item);
+    }
+  }
   
 }
 </script>

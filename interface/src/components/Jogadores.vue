@@ -31,12 +31,5 @@ export default {
       this.$router.push("/jogadores/" + item.idJogador);
     }
   }
-  /*
-  <span v-for="j in lista" :key="j.idJogador"
-                            @click="mostraJogador(j.idJogador)"
-                        >
-                            {{ j.nome }};
-                        </span>
-  */
 }
 </script>
