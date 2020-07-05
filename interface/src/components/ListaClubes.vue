@@ -1,7 +1,7 @@
 <template>
     <v-card class="ma-2">
         <v-card-title class="indigo darken-4 white--text" dark>
-            Liga Nos "Temporada 2019/20": Clubes da liga
+            Liga NOS "Temporada 2019/20": Clubes da liga
             <v-spacer></v-spacer>
             <v-chip
               class="mr-2"

@@ -146,10 +146,11 @@ Liga.getListaEstadios = async function(){
     var query = `select * where{
         ?e c:nome ?estadio.
         ?e c:coordenadas ?coord.
-        ?e c:eEstadioDe ?c.
+        ?e c:eEstadioDe ?clu.
         ?e c:imagem ?imagem.
-        ?c c:nome ?clube.
+        ?clu c:nome ?clube.
         bind(strafter(str(?e), 'LigaNos#') as ?idEstadio) .           
+        bind(strafter(str(?clu), 'LigaNos#') as ?c) .           
     }
     order by ?estadio ` 
     var encoded = encodeURIComponent(prefixes + query)

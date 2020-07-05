@@ -1,7 +1,7 @@
 <template>
     <v-card class="ma-2">
         <v-card-title class="indigo darken-4 white--text" dark>
-            Liga Nos "Temporada 2019/20": Lista de Estádios
+            Liga NOS "Temporada 2019/20": Lista de Estádios
             <v-spacer></v-spacer>
             <v-chip
               class="mr-2"
@@ -29,6 +29,12 @@
                     <v-alert :value="true" color="warning" icon="warning">
                         Ainda não foi possível apresentar uma lista dos estadios...
                     </v-alert>
+                </template>
+                <template v-slot:item.clube="{ item }">
+                  <a @click="mostraClube(item.c)">{{item.clube}}</a>
+                </template>
+                <template v-slot:item.coord="{ item }">
+                  <a @click="myFunction('https://maps.google.com/?q='+item.coord)">{{item.coord}}</a>
                 </template>
                 <template v-slot:item.imagem="{ item }">
                     <v-avatar size="40px">
@@ -103,7 +109,15 @@ export default {
       alert('Liga NOS 19/20');
       this.$router.push("/about");
     },
-      
+
+    myFunction: function(link) {
+      window.open(link)
+    },
+
+    mostraClube: function(item){
+      this.$router.push("/clubes/" + item);
+    }
+
   }
   
 }

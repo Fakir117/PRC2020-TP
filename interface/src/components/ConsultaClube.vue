@@ -48,14 +48,6 @@
                 </v-row>
                 <v-row>
                   <v-col cols="2">
-                    <div class="info-label">Coordenadas do Estádio</div>
-                  </v-col>
-                  <v-col>
-                    <div class="info-content"><a @click="myFunction('https://maps.google.com/?q='+clube.info.coordEstadio)">{{ clube.info.coordEstadio }}</a></div>
-                  </v-col>
-                </v-row>
-                <v-row>
-                  <v-col cols="2">
                     <div class="info-label">Valor de Mercado</div>
                   </v-col>
                   <v-col>
