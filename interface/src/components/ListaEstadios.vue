@@ -1,6 +1,7 @@
 <template>
     <v-card class="ma-2">
         <v-card-title class="indigo darken-4 white--text" dark>
+          <Menu/>
             Liga NOS "Temporada 2019/20": Lista de Estádios
             <v-spacer></v-spacer>
             <v-chip
@@ -53,11 +54,6 @@
                 </template>
             </v-data-table>
         </v-card-text>
-        <v-card-actions>
-         <v-spacer></v-spacer>
-         <v-btn color="blue darken-1" href="/clubes">Clubes</v-btn>
-         <v-btn color="blue darken-1" href="/jogadores">Jogadores</v-btn>
-        </v-card-actions>
     </v-card>
 </template>
 
@@ -65,10 +61,16 @@
 import axios from 'axios'
 const lhost = require("@/config/global").host;
 
+import Menu from '@/components/Menu.vue'
+
 import { mdiAccount } from '@mdi/js';
 
 export default {
   name: 'ListaEstadios',
+
+  components: {
+    Menu
+  },
 
   data: () => ({
     hEstadios: [

@@ -1,6 +1,7 @@
 <template>
   <v-card>
     <v-card-title class="indigo darken-4 white--text" dark>
+      <Menu/>
       <span class="headline">Liga Nos "Temporada 2019/20": Informações sobre a liga  "{{ liga.info.idLiga }}"</span>
       <v-spacer></v-spacer>
     </v-card-title> 
@@ -105,9 +106,14 @@
 import axios from 'axios'
 const lhost = require("@/config/global").host;
 
+import Menu from '@/components/Menu.vue'
 
 export default {
   name: 'ConsultaLiga',
+
+  components: {
+    Menu
+  },
 
   props: [],
 

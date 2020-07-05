@@ -1,6 +1,7 @@
 <template>
   <v-card class="ma-2">
     <v-card-title class="indigo darken-4 white--text" dark>
+      <Menu/>
       Liga NOS "Temporada 2019/20": Jogadores da liga
       <v-spacer></v-spacer>
       <v-chip
@@ -39,12 +40,6 @@
         </template>
       </v-data-table>
     </v-card-text>
-
-    <v-card-actions>
-      <v-spacer></v-spacer>
-      <v-btn color="blue darken-1" href="/clubes">Clubes</v-btn>
-      <v-btn color="blue darken-1" href="/estadios">Estadios</v-btn>
-    </v-card-actions>
   </v-card>
 </template>
 
@@ -56,8 +51,14 @@ const lhost = require("@/config/global").host;
 
 import { mdiAccount } from '@mdi/js';
 
+import Menu from '@/components/Menu.vue'
+
 export default {
   name: 'ListaJogadores',
+
+  components: {
+    Menu
+  },
 
   data: () => ({
     hjogadores: [
