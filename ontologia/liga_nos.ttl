@@ -262,6 +262,7 @@
 #################################################################
 
 
+
 ### LIGA ###
 
 ###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#LIGA_NOS
@@ -444,7 +445,7 @@
 	:temJogador :Cristian_Borja_Leite_26;
 	:temJogador :Nuno_Mendes_35;
 	:temJogador :Valentin_Rosier_19;
-	:temJogador :Stejan_Ristovski_13;
+	:temJogador :Stefan_Ristovski_13;
 	:temJogador :Idrissa_Doumbia_98;
 	:temJogador :Eduardo_Henrique_5;
 	:temJogador :Wendel_37;
@@ -1303,9 +1304,9 @@
 
 			 :valor_mercado "30,50 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Rúben Dias".
@@ -1330,7 +1331,7 @@
 
 			 :valor_mercado "14,5 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -1387,7 +1388,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "6";
 
 	:temNacionalidade :Espanhola;
 			 :nome "Alejandro Grimaldo".
@@ -1412,9 +1413,9 @@
 
 			 :valor_mercado "4,5 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "3";
 
 	:temNacionalidade :Portuguesa;
 	:temNacionalidade :Cabo_Verdiana;
@@ -1468,9 +1469,9 @@
 
 			 :valor_mercado "6,5 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "4";
 
-			 :assistencias "0";
+			 :assistencias "5";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "André Almeida".
@@ -1495,7 +1496,7 @@
 
 			 :valor_mercado "18,5 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -1524,7 +1525,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 	:temNacionalidade :Angolana;
@@ -1577,7 +1578,7 @@
 
 			 :valor_mercado "12 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
 			 :assistencias "0";
 
@@ -1605,9 +1606,9 @@
 
 			 :valor_mercado "4 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Marroquinha;
 	:temNacionalidade :Francesa;
@@ -1633,9 +1634,9 @@
 
 			 :valor_mercado "21,5 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "16";
 
-			 :assistencias "0";
+			 :assistencias "12";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Pizzi".
@@ -1662,7 +1663,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Jota".
@@ -1687,9 +1688,9 @@
 
 			 :valor_mercado "24 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "6";
 
-			 :assistencias "0";
+			 :assistencias "4";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Rafa Silva".
@@ -1714,9 +1715,9 @@
 
 			 :valor_mercado "8 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Argentina;
 	:temNacionalidade :Italiana;
@@ -1769,9 +1770,9 @@
 
 			 :valor_mercado "7 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "6";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Chiquinho".
@@ -1796,9 +1797,9 @@
 
 			 :valor_mercado "16 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "17";
 
-			 :assistencias "0";
+			 :assistencias "7";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Carlos Vinicius".
@@ -1823,9 +1824,9 @@
 
 			 :valor_mercado "12 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
-			 :assistencias "0";
+			 :assistencias "3";
 
 	:temNacionalidade :Suica;
 	:temNacionalidade :Bosnia;
@@ -1988,9 +1989,9 @@
 
 			 :valor_mercado "3,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Congolesa;
 			 :nome "Chancel Mbemba".
@@ -2015,9 +2016,9 @@
 
 			 :valor_mercado "2,4 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "5";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Espanhola;
 			 :nome "Ivan Marcano".
@@ -2042,9 +2043,9 @@
 
 			 :valor_mercado "0,800 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 	:temNacionalidade :Brasileira;
@@ -2070,9 +2071,9 @@
 
 			 :valor_mercado "32 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "9";
 
-			 :assistencias "0";
+			 :assistencias "5";
 
 	:temNacionalidade :Brasileira;
 	:temNacionalidade :Italiana;
@@ -2098,7 +2099,7 @@
 
 			 :valor_mercado "3,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -2128,7 +2129,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 	:temNacionalidade :Guineense;
@@ -2154,7 +2155,7 @@
 
 			 :valor_mercado "4 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -2183,7 +2184,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Colombiana;
 			 :nome "Mateus Uribe".
@@ -2208,9 +2209,9 @@
 
 			 :valor_mercado "4,8 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
-			 :assistencias "0";
+			 :assistencias "5";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Sérgio Oliveira".
@@ -2235,9 +2236,9 @@
 
 			 :valor_mercado "20 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "4";
 
-			 :assistencias "0";
+			 :assistencias "11";
 
 	:temNacionalidade :Mexicana;
 			 :nome "Jesus Corona".
@@ -2262,9 +2263,9 @@
 
 			 :valor_mercado "13,5 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "6";
 
 	:temNacionalidade :Portuguesa;
 	:temNacionalidade :Brasileira;
@@ -2290,9 +2291,9 @@
 
 			 :valor_mercado "9 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "4";
 
-			 :assistencias "0";
+			 :assistencias "3";
 
 	:temNacionalidade :Colombiana;
 			 :nome "Luis Diaz".
@@ -2319,7 +2320,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 	:temNacionalidade :Guineense;
@@ -2374,7 +2375,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Japonesa;
 			 :nome "Nakajima".
@@ -2399,9 +2400,9 @@
 
 			 :valor_mercado "19 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "8";
 
-			 :assistencias "0";
+			 :assistencias "6";
 
 	:temNacionalidade :Francesa;
 	:temNacionalidade :Malinense;
@@ -2427,7 +2428,7 @@
 
 			 :valor_mercado "9 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -2454,7 +2455,7 @@
 
 			 :valor_mercado "8 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "7";
 
 			 :assistencias "0";
 
@@ -2482,9 +2483,9 @@
 
 			 :valor_mercado "8 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "7";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Tiquinho Soares ".
@@ -2590,7 +2591,7 @@
 
 			 :valor_mercado "8 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "4";
 
 			 :assistencias "0";
 
@@ -2673,9 +2674,9 @@
 
 			 :valor_mercado "1,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Francesa;
 			 :nome "Jérémy Mathieu".
@@ -2727,9 +2728,9 @@
 
 			 :valor_mercado "12 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Argentina;
 			 :nome "Marcos Acuña".
@@ -2754,7 +2755,7 @@
 
 			 :valor_mercado "2,8 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -2816,8 +2817,8 @@
 			 :nome "Valentin Rosier".
 
 
-###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#Stejan_Ristovski_13
-:Stejan_Ristovski_13 rdf:type owl:NamedIndividual,
+###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#Stefan_Ristovski_13
+:Stefan_Ristovski_13 rdf:type owl:NamedIndividual,
 			 :Jogador;
 			 :posicao "Lateral Direito";
 
@@ -2837,10 +2838,10 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "3";
 
 	:temNacionalidade :Macedonia;
-			 :nome "Stejan Ristovski".
+			 :nome "Stefan Ristovski".
 
 
 ###  http://www.semanticweb.org/diogosilva117/ontologies/2020/LigaNos#Idrissa_Doumbia_98
@@ -2916,9 +2917,9 @@
 
 			 :valor_mercado "8 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Wendel".
@@ -3080,9 +3081,9 @@
 
 			 :valor_mercado "4,5 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "5";
 
-			 :assistencias "0";
+			 :assistencias "3";
 
 	:temNacionalidade :Portuguesa;
 	:temNacionalidade :Cabo_Verdiana;
@@ -3110,7 +3111,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Angolana;
 	:temNacionalidade :Portuguesa;
@@ -3136,7 +3137,7 @@
 
 			 :valor_mercado "0,9 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
 			 :assistencias "0";
 
@@ -3163,9 +3164,9 @@
 
 			 :valor_mercado "6,5 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "6";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Luiz Phellype".
@@ -3190,9 +3191,9 @@
 
 			 :valor_mercado "6 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "4";
 
-			 :assistencias "0";
+			 :assistencias "4";
 
 	:temNacionalidade :Italiana;
 	:temNacionalidade :Argentina;
@@ -3218,9 +3219,9 @@
 
 			 :valor_mercado "3,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "5";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Esloveno;
 			 :nome "Andraz Sporar".
@@ -3356,7 +3357,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Bruno Viana".
@@ -3408,9 +3409,9 @@
 
 			 :valor_mercado "4 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Raúl Silva".
@@ -3489,7 +3490,7 @@
 
 			 :valor_mercado "0,65 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
 			 :assistencias "0";
 
@@ -3546,7 +3547,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "4";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Nuno Sequeira".
@@ -3598,9 +3599,9 @@
 
 			 :valor_mercado "3,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "5";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Ricardo Esgaio".
@@ -3652,7 +3653,7 @@
 
 			 :valor_mercado "4,8 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
 			 :assistencias "0";
 
@@ -3679,9 +3680,9 @@
 
 			 :valor_mercado "3,5 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
-			 :assistencias "0";
+			 :assistencias "3";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Fransérgio".
@@ -3708,7 +3709,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "André Horta".
@@ -3735,7 +3736,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "3";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "João Novais".
@@ -3760,9 +3761,9 @@
 
 			 :valor_mercado "8 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "8";
 
-			 :assistencias "0";
+			 :assistencias "6";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Ricardo Horta".
@@ -3787,9 +3788,9 @@
 
 			 :valor_mercado "5,5 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "5";
 
-			 :assistencias "0";
+			 :assistencias "4";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Galeno".
@@ -3814,7 +3815,7 @@
 
 			 :valor_mercado "4 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
 			 :assistencias "0";
 
@@ -3842,9 +3843,9 @@
 
 			 :valor_mercado "16 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "8";
 
-			 :assistencias "0";
+			 :assistencias "5";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Trincão".
@@ -3869,9 +3870,9 @@
 
 			 :valor_mercado "4,8 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "13";
 
-			 :assistencias "0";
+			 :assistencias "4";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Paulinho".
@@ -3923,9 +3924,9 @@
 
 			 :valor_mercado "2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Rui Fonte".
@@ -4169,7 +4170,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Francesa;
 	:temNacionalidade :Argelina;
@@ -4224,7 +4225,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "4";
 
 	:temNacionalidade :Camaronesa;
 			 :nome "Falaye Sacko".
@@ -4276,9 +4277,9 @@
 
 			 :valor_mercado "2,4 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Nigeriana;
 			 :nome "Mikel Agu".
@@ -4330,9 +4331,9 @@
 
 			 :valor_mercado "2,8 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "André André".
@@ -4359,7 +4360,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Francesa;
 			 :nome "Denis Will Poha".
@@ -4384,7 +4385,7 @@
 
 			 :valor_mercado "1,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
 			 :assistencias "0";
 
@@ -4413,7 +4414,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Ganesa;
 			 :nome "Joseph Amoah".
@@ -4466,9 +4467,9 @@
 
 			 :valor_mercado "3,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Lucas Evangelista".
@@ -4493,9 +4494,9 @@
 
 			 :valor_mercado "0,725 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "8";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "João Carlos Teixeira".
@@ -4520,7 +4521,7 @@
 
 			 :valor_mercado "0,725 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -4575,9 +4576,9 @@
 
 			 :valor_mercado "2,8 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "5";
 
-			 :assistencias "0";
+			 :assistencias "4";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Davidson".
@@ -4604,7 +4605,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "4";
 
 	:temNacionalidade :Holandesa;
 	:temNacionalidade :Americana;
@@ -4630,9 +4631,9 @@
 
 			 :valor_mercado "3,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "6";
 
-			 :assistencias "0";
+			 :assistencias "8";
 
 	:temNacionalidade :Cipriota;
 	:temNacionalidade :Inglesa;
@@ -4658,9 +4659,9 @@
 
 			 :valor_mercado "1,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Rochinha".
@@ -4685,7 +4686,7 @@
 
 			 :valor_mercado "0,1 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -4712,9 +4713,9 @@
 
 			 :valor_mercado "2,8 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Italiana;
 	:temNacionalidade :Brasileira;
@@ -4740,9 +4741,9 @@
 
 			 :valor_mercado "1,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "7";
 
-			 :assistencias "0";
+			 :assistencias "5";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Bruno Duarte".
@@ -4794,7 +4795,7 @@
 
 			 :valor_mercado "0 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -4984,9 +4985,9 @@
 
 			 :valor_mercado "0,65 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Matheus Reis".
@@ -5040,7 +5041,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Diogo Figueiras".
@@ -5147,9 +5148,9 @@
 
 			 :valor_mercado "1,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Filipe Augusto".
@@ -5176,7 +5177,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Libia;
 			 :nome "Al Musrati".
@@ -5228,7 +5229,7 @@
 
 			 :valor_mercado "0,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
 			 :assistencias "0";
 
@@ -5255,9 +5256,9 @@
 
 			 :valor_mercado "1,6 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "6";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Nuno Santos".
@@ -5282,9 +5283,9 @@
 
 			 :valor_mercado "1,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "6";
 
-			 :assistencias "0";
+			 :assistencias "5";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Diego Lopes".
@@ -5336,9 +5337,9 @@
 
 			 :valor_mercado "0,6 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Italiana;
 	:temNacionalidade :Brasileira;
@@ -5364,9 +5365,9 @@
 
 			 :valor_mercado "1,4 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "6";
 
 	:temNacionalidade :Guineense;
 	:temNacionalidade :Portuguesa;
@@ -5392,9 +5393,9 @@
 
 			 :valor_mercado "0,8 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "6";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Angolana;
 			 :nome "Gelson Dala".
@@ -5419,9 +5420,9 @@
 
 			 :valor_mercado "3,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "13";
 
-			 :assistencias "0";
+			 :assistencias "5";
 
 	:temNacionalidade :Iraniana;
 			 :nome "Mehdi Taremi".
@@ -5446,9 +5447,9 @@
 
 			 :valor_mercado "0,4 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Bruno Moreira".
@@ -5527,9 +5528,9 @@
 
 			 :valor_mercado "0,65 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Mocambicana;
 			 :nome "Zainadine Júnior".
@@ -5608,9 +5609,9 @@
 
 			 :valor_mercado "0,4 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Rúben".
@@ -5662,9 +5663,9 @@
 
 			 :valor_mercado "0,65 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "5";
 
 	:temNacionalidade :Portuguesa;
 	:temNacionalidade :Guineense;
@@ -5719,7 +5720,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Croata;
 			 :nome "Josip Vukovic".
@@ -5746,7 +5747,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Colombiana;
 			 :nome "Diego Moreno".
@@ -5798,9 +5799,9 @@
 
 			 :valor_mercado "0,475 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Francesa;
 	:temNacionalidade :Camaronesa;
@@ -5828,7 +5829,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Edgar Costa".
@@ -5881,9 +5882,9 @@
 
 			 :valor_mercado "0,65 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Argentina;
 			 :nome "Jorge Correa".
@@ -5908,7 +5909,7 @@
 
 			 :valor_mercado "2,8 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -5935,9 +5936,9 @@
 
 			 :valor_mercado "0,325 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Jhon Cley".
@@ -5962,7 +5963,7 @@
 
 			 :valor_mercado "0,8 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
 			 :assistencias "0";
 
@@ -5989,9 +5990,9 @@
 
 			 :valor_mercado "0,4 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Getterson".
@@ -6016,9 +6017,9 @@
 
 			 :valor_mercado "0,9 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Brasileira;
 	:temNacionalidade :Camaronesa;
@@ -6044,7 +6045,7 @@
 
 			 :valor_mercado "0,55 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "10";
 
 			 :assistencias "0";
 
@@ -6155,7 +6156,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Artur Jorge".
@@ -6180,7 +6181,7 @@
 
 			 :valor_mercado "0,65 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
 			 :assistencias "0";
 
@@ -6261,7 +6262,7 @@
 
 			 :valor_mercado "0,525 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -6290,7 +6291,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Nuno Pinto".
@@ -6317,7 +6318,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Sílvio".
@@ -6372,7 +6373,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Leandro Vilela".
@@ -6397,7 +6398,7 @@
 
 			 :valor_mercado "0,1 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -6480,7 +6481,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Nuno Valente".
@@ -6532,9 +6533,9 @@
 
 			 :valor_mercado "0,55 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "5";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Éber Bessa".
@@ -6586,7 +6587,7 @@
 
 			 :valor_mercado "0,650 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "4";
 
 			 :assistencias "0";
 
@@ -6613,7 +6614,7 @@
 
 			 :valor_mercado "0,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -6640,9 +6641,9 @@
 
 			 :valor_mercado "0,650 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Portuguesa;
 	:temNacionalidade :Cabo_Verdiana;
@@ -6668,9 +6669,9 @@
 
 			 :valor_mercado "0,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Zequinha".
@@ -6695,7 +6696,7 @@
 
 			 :valor_mercado "0,9 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -6724,7 +6725,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Argentina;
 			 :nome "Brian Mansilla".
@@ -6749,9 +6750,9 @@
 
 			 :valor_mercado "0,625 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Marroquina;
 			 :nome "Khalid Hachadi".
@@ -6804,9 +6805,9 @@
 
 			 :valor_mercado "0,3 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "4";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Hélder Guedes".
@@ -6915,7 +6916,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Gonçalo Silva".
@@ -7050,7 +7051,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Nigeriana;
 			 :nome "Chima Akas".
@@ -7104,7 +7105,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Angolana;
 			 :nome "Show".
@@ -7129,9 +7130,9 @@
 
 			 :valor_mercado "0,65 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "3";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "André Santos".
@@ -7156,9 +7157,9 @@
 
 			 :valor_mercado "0,325 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Tiago Esgaio".
@@ -7265,9 +7266,9 @@
 
 			 :valor_mercado "0,475 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "7";
 
-			 :assistencias "0";
+			 :assistencias "3";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Licá".
@@ -7292,9 +7293,9 @@
 
 			 :valor_mercado "0,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
-			 :assistencias "0";
+			 :assistencias "4";
 
 	:temNacionalidade :Portuguesa;
 	:temNacionalidade :Cabo_Verdiana;
@@ -7322,7 +7323,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Marco Matias".
@@ -7429,7 +7430,7 @@
 
 			 :valor_mercado "1,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
 			 :assistencias "0";
 
@@ -7566,7 +7567,7 @@
 
 			 :valor_mercado "1,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -7593,7 +7594,7 @@
 
 			 :valor_mercado "0,475 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
 			 :assistencias "0";
 
@@ -7621,7 +7622,7 @@
 
 			 :valor_mercado "0,3 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
 			 :assistencias "0";
 
@@ -7648,7 +7649,7 @@
 
 			 :valor_mercado "0,1 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -7677,7 +7678,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Marlon".
@@ -7731,7 +7732,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Fabiano".
@@ -7756,9 +7757,9 @@
 
 			 :valor_mercado "0,65 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "3";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Carraça".
@@ -7893,7 +7894,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Paraguaia;
 			 :nome "Fernando Cardoso".
@@ -7920,7 +7921,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Paulinho".
@@ -7945,9 +7946,9 @@
 
 			 :valor_mercado "2,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "4";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 	:temNacionalidade :Cabo_Verdiana;
@@ -7973,7 +7974,7 @@
 
 			 :valor_mercado "0,475 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -8000,9 +8001,9 @@
 
 			 :valor_mercado "0,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Angolana;
 	:temNacionalidade :Portuguesa;
@@ -8055,9 +8056,9 @@
 
 			 :valor_mercado "0,4 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "4";
 
 	:temNacionalidade :Espanhola;
 			 :nome "Alberto Bueno".
@@ -8082,9 +8083,9 @@
 
 			 :valor_mercado "0,65 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Gambiense;
 			 :nome "Yusupha Njie".
@@ -8109,9 +8110,9 @@
 
 			 :valor_mercado "0,65 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Servia;
 			 :nome "Nikola Stojiljkovic".
@@ -8136,9 +8137,9 @@
 
 			 :valor_mercado "0,3 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Cassiano".
@@ -8165,7 +8166,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Mateus Pasinato".
@@ -8244,9 +8245,9 @@
 
 			 :valor_mercado "0,475 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Iago Santos".
@@ -8271,7 +8272,7 @@
 
 			 :valor_mercado "0,325 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
 			 :assistencias "0";
 
@@ -8298,7 +8299,7 @@
 
 			 :valor_mercado "0,3 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "4";
 
 			 :assistencias "0";
 
@@ -8328,7 +8329,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Argelina;
 			 :nome "Rafik Halliche".
@@ -8355,7 +8356,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Guineense;
 	:temNacionalidade :Portuguesa;
@@ -8435,9 +8436,9 @@
 
 			 :valor_mercado "0,55 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "João Aurélio".
@@ -8464,7 +8465,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Belga;
 	:temNacionalidade :Congolesa;
@@ -8517,9 +8518,9 @@
 
 			 :valor_mercado "0,325 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Fábio Pacheco".
@@ -8546,7 +8547,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Guineense;
 	:temNacionalidade :Portuguesa;
@@ -8574,7 +8575,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Alex Soares".
@@ -8599,9 +8600,9 @@
 
 			 :valor_mercado "1,3 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "4";
 
-			 :assistencias "0";
+			 :assistencias "4";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Filipe Soares".
@@ -8628,7 +8629,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Nuno Santos".
@@ -8653,9 +8654,9 @@
 
 			 :valor_mercado "0,725 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "4";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Pedro Nuno".
@@ -8707,9 +8708,9 @@
 
 			 :valor_mercado "0,4 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Luis Machado".
@@ -8734,9 +8735,9 @@
 
 			 :valor_mercado "2,4 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Sul_Africana;
 			 :nome "Luther Singh".
@@ -8761,9 +8762,9 @@
 
 			 :valor_mercado "0,475 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "3";
 
 	:temNacionalidade :Argelina;
 	:temNacionalidade :Francesa;
@@ -8789,9 +8790,9 @@
 
 			 :valor_mercado "0,475 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Gabrielzinho".
@@ -8816,9 +8817,9 @@
 
 			 :valor_mercado "0,55 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "12";
 
-			 :assistencias "0";
+			 :assistencias "3";
 
 	:temNacionalidade :Angolana;
 	:temNacionalidade :Portuguesa;
@@ -8871,7 +8872,7 @@
 
 			 :valor_mercado "0,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "4";
 
 			 :assistencias "0";
 
@@ -8979,7 +8980,7 @@
 
 			 :valor_mercado "0,475 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -9007,9 +9008,9 @@
 
 			 :valor_mercado "0,475 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Philipe Sampaio".
@@ -9034,9 +9035,9 @@
 
 			 :valor_mercado "0,3 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Ricardo Alves".
@@ -9117,7 +9118,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Marroquina;
 	:temNacionalidade :Francesa;
@@ -9170,9 +9171,9 @@
 
 			 :valor_mercado "0,9 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "4";
 
 	:temNacionalidade :Espanhola;
 			 :nome "Pepelu".
@@ -9251,9 +9252,9 @@
 
 			 :valor_mercado "0,55 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "João Pedro".
@@ -9278,7 +9279,7 @@
 
 			 :valor_mercado "0,3 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -9332,9 +9333,9 @@
 
 			 :valor_mercado "0,625 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Richard".
@@ -9359,9 +9360,9 @@
 
 			 :valor_mercado "1 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Colombiana;
 			 :nome "Jhon Murrilo".
@@ -9386,9 +9387,9 @@
 
 			 :valor_mercado "0,8 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Xavier".
@@ -9415,7 +9416,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Ricardo Valente".
@@ -9440,9 +9441,9 @@
 
 			 :valor_mercado "0,55 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Hondurenha;
 			 :nome "Jonathan Torres".
@@ -9494,7 +9495,7 @@
 
 			 :valor_mercado "0,3 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "5";
 
 			 :assistencias "0";
 
@@ -9629,9 +9630,9 @@
 
 			 :valor_mercado "1,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Fábio Cardoso".
@@ -9656,9 +9657,9 @@
 
 			 :valor_mercado "0,8 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "João Afonso".
@@ -9683,7 +9684,7 @@
 
 			 :valor_mercado "0,55 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -9710,9 +9711,9 @@
 
 			 :valor_mercado "0,4 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Nigeriana;
 			 :nome "Zaidu Sanusi".
@@ -9822,7 +9823,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Rafael Ramos".
@@ -9847,9 +9848,9 @@
 
 			 :valor_mercado "1,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Holandesa;
 	:temNacionalidade :Iraquiana;
@@ -9902,7 +9903,7 @@
 
 			 :valor_mercado "0,4 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -9956,9 +9957,9 @@
 
 			 :valor_mercado "0,625 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "7";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Lincoln".
@@ -9985,7 +9986,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Costinha".
@@ -10010,9 +10011,9 @@
 
 			 :valor_mercado "0,65 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "5";
 
-			 :assistencias "0";
+			 :assistencias "4";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Carlos Jr.".
@@ -10065,9 +10066,9 @@
 
 			 :valor_mercado "0,3 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Cryzan".
@@ -10092,7 +10093,7 @@
 
 			 :valor_mercado "0,4 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
 			 :assistencias "0";
 
@@ -10119,7 +10120,7 @@
 
 			 :valor_mercado "0,325 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -10146,7 +10147,7 @@
 
 			 :valor_mercado "0,8 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
 			 :assistencias "0";
 
@@ -10173,7 +10174,7 @@
 
 			 :valor_mercado "0,55 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "5";
 
 			 :assistencias "0";
 
@@ -10257,7 +10258,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Polaca;
 			 :nome "Adam Dzwigala".
@@ -10282,7 +10283,7 @@
 
 			 :valor_mercado "0,4 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -10420,7 +10421,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Afonso Figueiredo".
@@ -10445,7 +10446,7 @@
 
 			 :valor_mercado "0,45 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -10555,7 +10556,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Claudio Falcão".
@@ -10663,9 +10664,9 @@
 
 			 :valor_mercado "0,35 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 	:temNacionalidade :Guineense;
@@ -10693,7 +10694,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Rúben Oliveira".
@@ -10720,7 +10721,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Reko Silva".
@@ -10773,9 +10774,9 @@
 
 			 :valor_mercado "0,325 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Suica;
 	:temNacionalidade :Portuguesa;
@@ -10801,7 +10802,7 @@
 
 			 :valor_mercado "0,325 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -10883,9 +10884,9 @@
 
 			 :valor_mercado "1,6 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "7";
 
-			 :assistencias "0";
+			 :assistencias "6";
 
 	:temNacionalidade :Iraniana;
 			 :nome "Mehrdad Mohammadi".
@@ -10939,7 +10940,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Ricardo Ferreira".
@@ -10991,7 +10992,7 @@
 
 			 :valor_mercado "0,800 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -11018,7 +11019,7 @@
 
 			 :valor_mercado "0,8 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
 			 :assistencias "0";
 
@@ -11045,7 +11046,7 @@
 
 			 :valor_mercado "0,325 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -11099,7 +11100,7 @@
 
 			 :valor_mercado "0,725 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -11126,9 +11127,9 @@
 
 			 :valor_mercado "0,8 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Japonesa;
 			 :nome "Koki Anzai".
@@ -11153,9 +11154,9 @@
 
 			 :valor_mercado "0,325 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Ganesa;
 			 :nome "Emmanuel Hackman".
@@ -11182,7 +11183,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Pedro Sá".
@@ -11207,9 +11208,9 @@
 
 			 :valor_mercado "0,6 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Rómulo".
@@ -11288,7 +11289,7 @@
 
 			 :valor_mercado "1,7 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
 			 :assistencias "0";
 
@@ -11315,7 +11316,7 @@
 
 			 :valor_mercado "0,65 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "5";
 
 			 :assistencias "0";
 
@@ -11369,9 +11370,9 @@
 
 			 :valor_mercado "1,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "4";
 
-			 :assistencias "0";
+			 :assistencias "5";
 
 	:temNacionalidade :Portuguesa;
 	:temNacionalidade :Sao_Tomense;
@@ -11451,9 +11452,9 @@
 
 			 :valor_mercado "2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "5";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Tabata".
@@ -11478,9 +11479,9 @@
 
 			 :valor_mercado "0,3 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 	:temNacionalidade :Guineense;
@@ -11506,7 +11507,7 @@
 
 			 :valor_mercado "1,6 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -11668,7 +11669,7 @@
 
 			 :valor_mercado "0,475 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
 			 :assistencias "0";
 
@@ -11697,7 +11698,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Marcelo".
@@ -11722,7 +11723,7 @@
 
 			 :valor_mercado "0,3 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -11778,7 +11779,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 	:temNacionalidade :Moldava;
@@ -11806,7 +11807,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Bruno Teles".
@@ -11831,7 +11832,7 @@
 
 			 :valor_mercado "0,525 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
 			 :assistencias "0";
 
@@ -11913,9 +11914,9 @@
 
 			 :valor_mercado "0,65 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Francesa;
 			 :nome "Mohamed Diaby".
@@ -11969,7 +11970,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Luíz Carlos".
@@ -11994,9 +11995,9 @@
 
 			 :valor_mercado "0,475 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "3";
 
 	:temNacionalidade :Portuguesa;
 	:temNacionalidade :Suica;
@@ -12022,9 +12023,9 @@
 
 			 :valor_mercado "0,650 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Pedrinho".
@@ -12078,7 +12079,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Murilo".
@@ -12103,9 +12104,9 @@
 
 			 :valor_mercado "0,45 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
-			 :assistencias "0";
+			 :assistencias "3";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Hélder Ferreira".
@@ -12130,9 +12131,9 @@
 
 			 :valor_mercado "0,8 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "João Amaral".
@@ -12157,9 +12158,9 @@
 
 			 :valor_mercado "0,3 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Uilton".
@@ -12238,9 +12239,9 @@
 
 			 :valor_mercado "0,4 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "10";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Douglas Tanque".
@@ -12319,7 +12320,7 @@
 
 			 :valor_mercado "6,7 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -12346,7 +12347,7 @@
 
 			 :valor_mercado "1,6 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -12373,9 +12374,9 @@
 
 			 :valor_mercado "1,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 	:temNacionalidade :Brasileira;
@@ -12401,7 +12402,7 @@
 
 			 :valor_mercado "0,45 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
 			 :assistencias "0";
 
@@ -12457,7 +12458,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Espanhola;
 			 :nome "Alex Centelles".
@@ -12484,7 +12485,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Senegalesa;
 			 :nome "Racine Coly".
@@ -12511,7 +12512,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Ivo Pinto".
@@ -12565,7 +12566,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Brasileira;
 	:temNacionalidade :Portuguesa;
@@ -12591,9 +12592,9 @@
 
 			 :valor_mercado "2,3 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Servio;
 			 :nome "Uros Racic".
@@ -12618,9 +12619,9 @@
 
 			 :valor_mercado "1,8 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "5";
 
-			 :assistencias "0";
+			 :assistencias "6";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Pedro Gonçalves".
@@ -12645,9 +12646,9 @@
 
 			 :valor_mercado "0,65 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Guga".
@@ -12699,9 +12700,9 @@
 
 			 :valor_mercado "3,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "9";
 
-			 :assistencias "0";
+			 :assistencias "5";
 
 	:temNacionalidade :Brasileira;
 	:temNacionalidade :Portuguesa;
@@ -12782,9 +12783,9 @@
 
 			 :valor_mercado "1,6 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
-			 :assistencias "0";
+			 :assistencias "7";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Diogo Gonçalves".
@@ -12809,9 +12810,9 @@
 
 			 :valor_mercado "1 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "4";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Ruben Lameiras".
@@ -12836,9 +12837,9 @@
 
 			 :valor_mercado "1,6 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "9";
 
-			 :assistencias "0";
+			 :assistencias "4";
 
 	:temNacionalidade :Espanhola;
 			 :nome "Toni Martínez".
@@ -12863,7 +12864,7 @@
 
 			 :valor_mercado "1,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "7";
 
 			 :assistencias "0";
 
@@ -13000,7 +13001,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Ygor Nogueira".
@@ -13025,9 +13026,9 @@
 
 			 :valor_mercado "0,4 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Rodrigão".
@@ -13054,7 +13055,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Rúben Fernandes".
@@ -13079,9 +13080,9 @@
 
 			 :valor_mercado "0,55 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "5";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Henrique Gomes".
@@ -13162,7 +13163,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Alex Pinto".
@@ -13189,7 +13190,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Fernando Fonseca".
@@ -13214,9 +13215,9 @@
 
 			 :valor_mercado "0,475 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 	:temNacionalidade :Francesa;
@@ -13244,7 +13245,7 @@
 
 			 :golos_marcados "0";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Brasileira;
 			 :nome "João Afonso".
@@ -13296,7 +13297,7 @@
 
 			 :valor_mercado "0,3 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
 			 :assistencias "0";
 
@@ -13323,9 +13324,9 @@
 
 			 :valor_mercado "1,2 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "5";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Bulgara;
 			 :nome "Bozhidar Kraev".
@@ -13350,9 +13351,9 @@
 
 			 :valor_mercado "0,8 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Rúben Ribeiro".
@@ -13377,9 +13378,9 @@
 
 			 :valor_mercado "0,55 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
-			 :assistencias "0";
+			 :assistencias "2";
 
 	:temNacionalidade :Senegalesa;
 			 :nome "Yves Baraye".
@@ -13404,9 +13405,9 @@
 
 			 :valor_mercado "0,3 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "2";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Samuel Lino".
@@ -13431,9 +13432,9 @@
 
 			 :valor_mercado "0,55 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "3";
 
-			 :assistencias "0";
+			 :assistencias "3";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Lourency".
@@ -13485,9 +13486,9 @@
 
 			 :valor_mercado "0,725 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "10";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Brasileira;
 			 :nome "Sandro Lima".
@@ -13512,9 +13513,9 @@
 
 			 :valor_mercado "0,65 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "3";
 
 	:temNacionalidade :Argelina;
 			 :nome "Zakaria Naidji".
@@ -13539,9 +13540,9 @@
 
 			 :valor_mercado "0,35 M";
 
-			 :golos_marcados "0";
+			 :golos_marcados "1";
 
-			 :assistencias "0";
+			 :assistencias "1";
 
 	:temNacionalidade :Portuguesa;
 			 :nome "Hugo Vieira".
